@@ -1,0 +1,27 @@
+//
+// Typography
+// ========================================================================== */
+
+
+
+// Font Weights
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-semibold: 500 !default;
+$font-weight-bold: 600 !default;
+
+// Text
+$text-small-font-size: rem(12px) !default;
+$text-font-size: rem(14px) !default;
+$text-large-font-size: rem(16px) !default;
+
+// Headings
+$heading-margin: 0;
+$heading-font-weight: $font-weight-semibold;
+
+$h1-font-size: rem(36px) !default;
+$h2-font-size: rem(28px) !default;
+$h3-font-size: rem(24px) !default;
+$h4-font-size: rem(20px) !default;
+$h5-font-size: rem(18px) !default;
+$h6-font-size: rem(16px) !default;

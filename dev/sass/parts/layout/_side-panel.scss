@@ -1,0 +1,14 @@
+.side-panel {
+	background: get-color(bg, 0);
+	@include absolute(top 0 left 0);
+	@include size(485px, 100vh);
+	
+	& > div {
+		height: 100%;
+
+		p {
+			color: white;
+			@include set-font($base-font-family, 600, normal, $fsbase);
+		}
+	}
+}
