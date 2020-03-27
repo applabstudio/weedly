@@ -1,0 +1,126 @@
+// vars
+$p: rem(16px 40px);
+$fw: 500;
+$b-rad: 6px;
+$fs: ms(4);
+$lh: 1.6;
+$ico-dim: rem(32px);
+
+// Structure Button
+.btn {
+  @include set-font($alt-font-family, $fw, normal, $fs);
+  @include size(100%, auto);
+  padding: $p;
+  line-height: $lh;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  transition: all $tt;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  border:none;
+  border-radius: $b-rad;
+  svg {
+    @include size($ico-dim, $ico-dim);
+    transition: all $tt;
+  }
+  @include media('>=sm') {
+    @include size(rem(280px), auto);
+  };
+
+  &--primary {
+    @include button-style(white, get-color(primary, 0), get-color(primary, 0), white, get-color(primary, 0), get-color(primary, 0));
+    &:active {
+      background: get-color(bg, 4);
+      color: white;
+    }
+  }
+  &--dark {
+    @include button-style(white, black, black, white, black, black);
+    &:active {
+      background: white ;
+      color: black;
+    }	
+  }
+  &--yellow {
+    @include button-style(white, get-color(bg, 5), get-color(bg, 5), white, get-color(bg, 5), get-color(bg, 5));
+    &:active {
+      background: get-color(bg, 6);
+      color:white;
+    }
+  }
+  &--grey {
+    @include button-style(white, get-color(bg, 7), get-color(bg, 7), white, get-color(bg, 7), get-color(bg, 7));
+    &:active {
+      background: get-color(bg, 8);
+      color:white;
+    }
+  }
+  &--beige {
+    @include button-style(get-color(beige-dark, 1), get-color(bg, 10), get-color(bg, 10), get-color(primary, 0), get-color(bg, 10), get-color(bg, 10));
+  }
+}
+
+.btn-simple {
+  margin: $mt 1rem 0 0;
+  @include rem(font-size, $textBase);
+
+  &--muted {
+    color:get-color(bg,0);
+  }
+  &--primary {
+    color: get-color(beige-dark,1);
+    font-weight: $fw;
+  }
+}
+
+.btn-lang {
+  border: none;
+  color:white;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  &:hover {
+    transition: $tt;
+    color: #c3c3c3;
+  }
+}
+
+.btn-gold{
+  background: rgba(195, 160,0, 0.5);
+  span{
+    margin-right: 14px;
+    margin-bottom: 10px;
+  }
+} 
+
+.btn-gray {
+  background: rgba(226, 224, 219, 0.5);
+   span{
+    margin-right: 14px;
+    margin-bottom: 10px;
+  }
+}
+
+.btn-primary {
+  @include set-font($alt-font-family, 500, normal, $textBase);
+  @include size(35.6rem, 4.3rem);
+  background: get-color(primary, 0);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  border: none;
+  margin:0 auto;
+  line-height: 3.6rem;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    transition: all $tt;
+    background: #d9b968;
+  }
+  &:active {
+    background: get-color(bg, 6);
+  }
+
+//   @include when-inside('.') {
+//     @include size(100%, auto);
+//   }
+}

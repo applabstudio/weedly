@@ -9,12 +9,16 @@
     <meta charset="utf-8"/>
     <meta http-equiv="cache-control" content="no-cache"/>
     <!-- SEO -->
-    <meta name="description" content="weedly">
+    <meta name="description" content="Weedly">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css" />
     <!-- UIkit JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merienda|Sarabun&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -22,17 +26,56 @@
 
 <body>
     <div class="page">
-        
-        <!-- Main -->
-        <main>
 
-            <div class="side-panel uk-container">
-                <div class="uk-flex uk-flex-center uk-flex-middle">
-                    <p>Un luogo sicuro dove scoprire e acquistare cannabis</p>
+        <div class="main">
+
+            <div uk-grid>
+                <!-- left-panel -->
+                <div class="left-panel">
+                    <div class="left-panel__wrapper uk-container uk-flex">
+                        <div class="left-panel__body uk-container uk-flex uk-flex-center uk-flex-middle">
+                            <div class="left-panel__header uk-flex uk-flex-column uk-flex-around">
+                                <div class="uk-flex uk-flex-left">
+                                    <img src="./images/logo.png" alt="weedly" class="logo">
+                                </div>
+                                <div>
+                                    <p>Un luogo sicuro dove scoprire e acquistare cannabis</p>
+                                    <button class="btn btn--dark">Come funziona</button>        
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                 </div><!-- ./left-panel -->
+                 <div class="right-panel">
+                    <div class="right-panel__login uk-flex uk-flex-center uk-flex-column uk-flex-middle uk-flex-around">
+                        <div class="right-panel__login__wrapper">
+                            <div class="right-panel__login__wrapper__header uk-flex uk-flex-column">
+                                <!-- <div class="business">
+                                    <button class="btn btn--gray">Business</button>
+                                </div> -->
+                                <h1>Accedi al tuo account</h1>
+                                <div class="social-signin uk-flex uk-flex-center">
+                                    <button><i class="fab fa-google"></i> Accedi con Google</button>
+                                    <button><i class="fab fa-facebook"></i></button>
+                                </div>
+                                <hr class="uk-divider-icon">
+                            </div>
+                                <button class="btn btn--primary">Accedi</button>
+                            
+                                <p>Non hai un account? <a href="#">Registrati</a></p>
+                            
+                        </div>
+
+                </div>
                 </div>
             </div>
+            
+            
 
-        </main> <!-- /main -->
+
+ 
+
+        </div>
         
     </div> <!-- /div.page -->
     <script src="js/app.bundle.js"></script>

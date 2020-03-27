@@ -1,5 +1,3 @@
-/*                                    Hamburgher                                    */
-
 const hamburgher = function() {
   let logo = document.querySelector('#logo-open');
   let logoh4 = document.querySelector('#logoh4');

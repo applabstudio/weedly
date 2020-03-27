@@ -1,14 +1,6 @@
 @charset 'utf-8';
 
 // ==========================================================================
-// $Base
-// ==========================================================================
-@import 'parts/base/base';
-@import 'parts/base/fonts';
-@import 'parts/base/typography';
-@import 'parts/base/helpers';
-
-// ==========================================================================
 // $Abstracts
 // ==========================================================================
 @import 'parts/abstracts/variables';
@@ -25,6 +17,21 @@
 @import 'parts/libraries/modularscale';
 
 // ==========================================================================
+// $Base
+// ==========================================================================
+@import 'parts/base/base';
+@import 'parts/base/fonts';
+@import 'parts/base/typography';
+@import 'parts/base/helpers';
+
+// ==========================================================================
+// $Layout
+// ==========================================================================
+@import 'parts/layout/site-header';
+@import 'parts/layout/site-footer';
+@import 'parts/layout/side-panel';
+
+// ==========================================================================
 // $Components
 // ==========================================================================
 @import 'parts/components/atoms';
@@ -32,15 +39,6 @@
 @import 'parts/components/organisms';
 
 // ==========================================================================
-// $Layout
-// ==========================================================================
-@import 'parts/layout/site-header';
-@import 'parts/layout/site-nav';
-@import 'parts/layout/subheader';
-@import 'parts/layout/site-footer';
-@import 'parts/layout/side-panel';
-
-// ==========================================================================
 // $Pages
 // ==========================================================================
-@import 'parts/pages/pages';
+@import 'parts/pages/page';

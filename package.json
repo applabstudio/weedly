@@ -1,6 +1,6 @@
 {
   "name": "weedly",
-  "version": "1.2.0",
+  "version": "1.0.0",
   "description": "Gulp Webpack Starter - Weedly static site builder with a lot of cool features for back-end team",
   "engines": {
     "node": ">=8.9.1",

@@ -1,11 +1,10 @@
 import 'lazysizes';
 import siteHeader from './modules/site-header';
 import allclick from './modules/allclick';
-import UIKit from './modules/UIKit';
-import hamburgher from './modules/components/hamburgher';
+// import UIKit from './modules/UIKit';
+import hamburgher from './modules/hamburgher';
 
-allclick.init();
 siteHeader.init();
+allclick.init();
 hamburgher.init();
-
-UIKit.init();
+// UIKit.init();
