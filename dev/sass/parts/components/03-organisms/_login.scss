@@ -17,7 +17,7 @@
 		p {
 			color: white;
 			@include set-font($base-font-family, normal, normal, 2.4rem);	
-			@include media(<'md') {
+			@include media('<=md') {
 				text-align: center;
 			}
 		}

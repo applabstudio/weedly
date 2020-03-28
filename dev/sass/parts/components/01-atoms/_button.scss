@@ -26,9 +26,9 @@ $ico-dim: rem(32px);
   }
 
   &--primary {
-    @include button-style(white, get-color(primary, 0), get-color(primary, 0), white, get-color(primary, 0), get-color(primary, 0));
+    @include button-style(white, get-color(primary, 0), get-color(primary, 0), white, get-color(primary, 0), get-color(primary, 1));
     &:active {
-      background: get-color(bg, 4);
+      background: get-color(primary, 0);
       color: white;
     }
   }
