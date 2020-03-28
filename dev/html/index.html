@@ -32,13 +32,13 @@
             <div uk-grid>
                 <!-- left-panel -->
                 <div class="left-panel">
-                    <div class="left-panel__wrapper uk-container uk-flex">
-                        <div class="left-panel__body uk-container uk-flex uk-flex-center uk-flex-middle">
-                            <div class="left-panel__header uk-flex uk-flex-column uk-flex-around">
-                                <div class="uk-flex uk-flex-left">
+                    <div class="left-panel__wrapper uk-container">
+                        <div class="left-panel__body uk-container">
+                            <div class="left-panel__header">
+                                <div class="left-panel__header__wrapper">
                                     <img src="./images/logo.png" alt="weedly" class="logo">
                                 </div>
-                                <div>
+                                <div class="left-panel__footer">
                                     <p>Un luogo sicuro dove scoprire e acquistare cannabis</p>
                                     <button class="btn btn--dark">Come funziona</button>        
                                 </div>
@@ -47,25 +47,40 @@
                     </div> 
                  </div><!-- ./left-panel -->
                  <div class="right-panel">
-                    <div class="right-panel__login uk-flex uk-flex-center uk-flex-column uk-flex-middle uk-flex-around">
+                    <div class="right-panel__login">
                         <div class="right-panel__login__wrapper">
-                            <div class="right-panel__login__wrapper__header uk-flex uk-flex-column">
+                            <div class="right-panel__login__wrapper__header">
                                 <!-- <div class="business">
                                     <button class="btn btn--gray">Business</button>
                                 </div> -->
                                 <h1>Accedi al tuo account</h1>
-                                <div class="social-signin uk-flex uk-flex-center">
-                                    <button><i class="fab fa-google"></i> Accedi con Google</button>
-                                    <button><i class="fab fa-facebook"></i></button>
+                                <div class="social-signin">
+                                    <button class="btn btn--google"><i class="fab fa-google"></i> Accedi con Google</button>
+                                    <button class=" btn--facebook"><i class="fab fa-facebook-f"></i></button>
                                 </div>
                                 <hr class="uk-divider-icon">
                             </div>
-                                <button class="btn btn--primary">Accedi</button>
-                            
-                                <p>Non hai un account? <a href="#">Registrati</a></p>
-                            
+                            <div>
+                                <div class="login-form">
+                                    <form>
+                                        <div class="uk-margin">
+                                            <label class="uk-form-label" for="e-mail">E-mail</label>
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input input-normal" id="e-mail" type="email">
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <label class="uk-form-label" for="password">Password</label>
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input input-normal" id="password" type="password">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                    <button class="btn btn--primary">Accedi</button>
+                                    <p>Non hai un account? <a href="#">Registrati</a></p>    
+                            </div>
                         </div>
-
                 </div>
                 </div>
             </div>

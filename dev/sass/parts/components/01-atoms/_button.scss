@@ -19,13 +19,11 @@ $ico-dim: rem(32px);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   border:none;
   border-radius: $b-rad;
+
   svg {
     @include size($ico-dim, $ico-dim);
     transition: all $tt;
   }
-  @include media('>=sm') {
-    @include size(rem(280px), auto);
-  };
 
   &--primary {
     @include button-style(white, get-color(primary, 0), get-color(primary, 0), white, get-color(primary, 0), get-color(primary, 0));
@@ -39,6 +37,26 @@ $ico-dim: rem(32px);
     &:active {
       background: white ;
       color: black;
+    }	
+  }
+  &--google {
+    @include button-style(white, get-color(bg, 3), get-color(bg, 3), white, get-color(bg, 3), get-color(bg, 3));
+    width: 324px;
+    &:active {
+      background: get-color(bg, 3);
+      color: white;
+    }	
+  }
+  &--facebook {
+    @include button-style(white, get-color(bg, 4), get-color(bg, 4), white, get-color(bg, 4), get-color(bg, 4));
+    width: 53px;
+    font-size:1.6rem;
+    border-radius: $b-rad;
+    cursor: pointer;
+    transition: all $tt;
+    &:active {
+      background: get-color(bg, 4);
+      color: white;
     }	
   }
   &--yellow {
