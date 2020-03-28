@@ -66,7 +66,6 @@
 
 .right-panel {
 	width: 47%;
-	padding: 0;
 	margin: 0 auto;
 
 	@include media('<=md') {
@@ -95,6 +94,10 @@
 			&__header {
 				width: 400px;
 				padding: 1.4rem 0;
+
+				@include media('<=md') {
+					padding:unset;
+				}
 
 				h1 {
 					@include set-font($base-font-family, normal, normal, 3.2rem);
@@ -125,6 +128,14 @@
 					@include flexbox();
 					@include justify-content(space-between);
 					@include align-items(center);
+				}
+
+				button {
+					width: 16rem;
+
+					@include media('<=md') {
+						width: 100%;
+					}
 				}
 			}
 		}
