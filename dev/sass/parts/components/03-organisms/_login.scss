@@ -73,6 +73,7 @@
 	}
 
 	&__login {
+		@include relative();
 		@include flexbox();
 		@include flex-direction(column);
 		@include align-items(center);
@@ -97,6 +98,17 @@
 
 				@include media('<=md') {
 					padding:unset;
+				}
+
+				.business {
+					@include absolute(top 4rem right 0);
+					width: 12.4rem;
+					padding-bottom:2rem;
+
+					@include media('<=md') {
+						margin: 0 auto;
+						position: unset;
+					}
 				}
 
 				h1 {

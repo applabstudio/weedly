@@ -68,9 +68,9 @@ $ico-dim: rem(32px);
     }
   }
   &--grey {
-    @include button-style(white, get-color(bg, 7), get-color(bg, 7), white, get-color(bg, 7), get-color(bg, 7));
+    @include button-style(white, get-color(bg, 5), get-color(bg, 5), white, get-color(bg, 5), get-color(bg, 5));
     &:active {
-      background: get-color(bg, 8);
+      background: get-color(bg, 5);
       color:white;
     }
   }
