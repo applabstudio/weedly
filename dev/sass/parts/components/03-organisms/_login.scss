@@ -5,6 +5,7 @@
 	@include media('<=md') {
 		@include size(100%, 100vh);
 	}
+
 	&__wrapper {
 		height:100%;
 		@include flexbox();
@@ -14,6 +15,7 @@
 		@include flexbox();
 		@include justify-content(center);
 		@include align-items(center);
+
 		p {
 			color: white;
 			@include set-font($base-font-family, normal, normal, 2.4rem);	
@@ -24,6 +26,12 @@
 	
 		button, input {
 			margin-top: 3.2rem;
+			width: 15rem;
+			padding: 1rem 2rem;
+
+			@include media('<=md') {
+				width: 100%
+			}
 		}
 	}
 
@@ -111,6 +119,12 @@
 					@include set-font($base-font-family, 600, normal, 1.6rem);
 					display: inline-block;
 					margin:1rem 0;
+				}
+
+				&__password {
+					@include flexbox();
+					@include justify-content(space-between);
+					@include align-items(center);
 				}
 			}
 		}
