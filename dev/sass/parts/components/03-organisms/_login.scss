@@ -6,6 +6,16 @@
 		@include justify-content(center);
 		height:100%;
 
+		@include media('<=md') {
+			width: 90%;
+			margin: 0 auto;
+		}	
+
+		@include media('<=sm') {
+			width: 90%;
+			margin: 0 auto;
+		}
+
 		&__wrapper {
 			@include flexbox();
 			@include flex-direction(column);	
@@ -23,13 +33,14 @@
 				padding: 1.4rem 0;
 
 				@include media('<=md') {
-					padding:unset;
+					padding: unset;
+					width: 100%;
 				}
 
 				.business {
 					@include absolute(top 4rem right 0);
 					width: 12.4rem;
-					padding-bottom:2rem;
+					padding-bottom: 2rem;
 
 					@include media('<=md') {
 						margin: 0 auto;

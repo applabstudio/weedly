@@ -2,6 +2,10 @@
 	width: 400px;
 	padding-bottom: 2.4rem;
 
+	@include media('<=md') {
+		width:100%;
+	}
+	
 	label {
 		@include set-font($base-font-family, 600, normal, 1.6rem);
 		display: inline-block;
