@@ -1,0 +1,8 @@
+.right-panel {
+	width: 47%;
+	margin: 0 auto;
+
+	@include media('<=md') {
+			width:100%;
+	}
+}

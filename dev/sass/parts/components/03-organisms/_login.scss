@@ -1,78 +1,4 @@
-.left-panel {
-	background: get-color(bg, 1);
-	@include size(480px, 100vh);
-	
-	@include media('<=md') {
-		@include size(100%, 100vh);
-	}
-
-	&__wrapper {
-		height:100%;
-		@include flexbox();
-	}
-
-	&__body {
-		@include flexbox();
-		@include justify-content(center);
-		@include align-items(center);
-
-		p {
-			color: white;
-			@include set-font($base-font-family, normal, normal, 2.4rem);	
-			@include media('<=md') {
-				text-align: center;
-			}
-		}
-	
-		button, input {
-			margin-top: 3.2rem;
-			width: 15rem;
-			padding: 1rem 2rem;
-
-			@include media('<=md') {
-				width: 100%
-			}
-		}
-	}
-
-	&__header {
-		@include flexbox();
-		@include flex-flow(column);
-		@include justify-content(center);
-		height: 100%;
-		
-
-		@include media('<=lg') {
-			@include justify-content(center);
-		}
-
-		&__wrapper {
-			@include flexbox();
-			@include justify-content(flex-start);
-			padding-bottom:16rem;
-
-			@include media('<=lg') {
-				@include justify-content(center);
-				padding-bottom:2rem;
-			}
-		}
-	}
-	&__footer {
-		@include media('<=lg') {
-			@include justify-content(center);
-		}
-	}
-}
-
-.right-panel {
-	width: 47%;
-	margin: 0 auto;
-
-	@include media('<=md') {
-			width:100%;
-	}
-
-	&__login {
+.login {
 		@include relative();
 		@include flexbox();
 		@include flex-direction(column);
@@ -127,5 +53,5 @@
 				}
 			}
 		}
+
 	}
-}
