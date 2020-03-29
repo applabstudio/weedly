@@ -42,6 +42,8 @@ $ico-dim: rem(32px);
   &--google {
     @include button-style(white, get-color(bg, 3), get-color(bg, 3), white, get-color(bg, 3), get-color(bg, 3));
     width: 324px;
+    border-radius: $b-rad;
+    border: 1px solid get-color(bg, 3);
     &:active {
       background: get-color(bg, 3);
       color: white;
