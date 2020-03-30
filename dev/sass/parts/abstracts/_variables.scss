@@ -27,16 +27,7 @@ $md: 2rem;
 $lg: 3rem;
 $xl: 4rem;
 
-// Font Size Unit
-$fsPrimary: 2.2rem;
-$textSmall: 1.2rem;
-$textMedium: 1.4rem;
-$textBase: 1.6rem;
-$textExtra: 1.8rem;
-$textLarge: 2rem;
-$textExtraLarge: 2.4rem;
-$textBig: 2.6rem;
-$textGiant: 2.8rem;
+
 
 // Line Height
 // fallback for old browser => $lh-base: (1 * 10) + px; 
@@ -93,6 +84,7 @@ $text-color: black;
 $colors: (
   primary: (
     0: #28C660,
+    1: #3ccb6f, //hover
   ),
   bg: (
     0: #F3F3F4,
@@ -107,10 +99,98 @@ $colors: (
   )
 );
 
+// Main Colors
+$color-weedly:    #28C660 !default; // weedly green
+$color-info:      #2083FE !default; // blue
+$color-success:   #2FCA74 !default; // green
+$color-warning:   #f5b848 !default; // yellow
+$color-danger:    #ED4D4D !default; // red
+$color-fancy: 	  #6F35F0 !default; // purple
+$color-primary:   #252529 !default; // black
+$color-secondary: #768093 !default; // grey
+
+// Extra Colors
+$color-pink: #F44C67 !default; // pink
+
+// Light Colors
+$color-info-light:      #E0EBFF !default; // blue
+$color-success-light:   #DAF4E6 !default; // green
+$color-warning-light:   #FFECDA !default; // yellow
+$color-danger-light:    #FFE2E2 !default; // red
+$color-primary-light:   #E9ECF2 !default; // black
+$color-fancy-light:     #E9E0FF !default; // purple
+
+// Basic Colors
+$color-sky-light: #F4F6F9 !default;
+$color-sky:       #ECEDF2 !default;
+$color-sky-dark:  #E1E2E8 !default;
+
+$color-ink-light: #99A5BD !default;
+$color-ink:       #768093 !default;
+$color-ink-dark:  #252529 !default;
+
+$color-white: #fff !default;
+
+// Main Gradients
+$gradient-info:      #1D7BF0, #2083FE !default;
+$gradient-success:   #28C76F, #2CCF75 !default;
+$gradient-warning:   #F5A155, #F5B855 !default;
+$gradient-danger:    #EE4343, #EC5F5F !default;
+$gradient-primary:   #252529, #444449 !default;
+$gradient-secondary: #768093, #969FB0 !default;
+$gradient-weedly:    #28C660, #20BE58 !default;
+
+// Extra Gradients
+$gradient-fancy: #4F5EF5, #6A77FF; // purple
+
+
+// Brand Color
+//
+// The brand color of the whole kit, will affect most UI components like toggles,
+// buttons and switchs.
+//
+
+$brand-color: $color-weedly !default;
+$body-background-color: $color-sky-light !default;
+$base-background-color: $color-white !default;
+
+
 // fonts
 $base-font-family: 'Sarabun', sans-serif;
-$alt-font-family: 'Poppins', sans-serif;
-$title-font-family: 'Open Sans', serif;
+
+$base-font-size: 16px !default;
+$base-line-height: 24px !default;
+
+// Font Weights
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-semibold: 500 !default;
+$font-weight-bold: 600 !default;
+
+// Text
+$text-small-font-size: rem(12px) !default;
+$text-font-size: rem(14px) !default;
+$text-large-font-size: rem(16px) !default;
+
+$text-color: $color-ink !default;
+$text-inverse-color: $color-white !default;
+$text-strong-color: $color-ink !default;
+
+// Headings
+$heading-color: $color-ink-dark;
+$heading-margin: 0;
+$heading-font-weight: $font-weight-semibold;
+
+$h1-font-size: rem(36px) !default;
+$h2-font-size: rem(28px) !default;
+$h3-font-size: rem(24px) !default;
+$h4-font-size: rem(20px) !default;
+$h5-font-size: rem(18px) !default;
+$h6-font-size: rem(16px) !default;
+
+// Links
+$link-color: $color-weedly;
+$link-hover-color: $color-weedly;
 
 // Transitions
 $tt: 0.5s;

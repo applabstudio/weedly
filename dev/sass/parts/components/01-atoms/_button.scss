@@ -2,13 +2,12 @@
 $p: rem(16px 40px);
 $fw: 500;
 $b-rad: 6px;
-$fs: ms(4);
 $lh: 1.6;
 $ico-dim: rem(32px);
 
 // Structure Button
 .btn {
-  @include set-font($alt-font-family, $fw, normal, $fs);
+  @include set-font($base-font-family, $fw, normal, $base-font-size);
   @include size(100%, auto);
   padding: $p;
   line-height: $lh;
@@ -16,7 +15,6 @@ $ico-dim: rem(32px);
   outline: none;
   cursor: pointer;
   transition: all $tt;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   border:none;
   border-radius: $b-rad;
 
@@ -26,10 +24,19 @@ $ico-dim: rem(32px);
   }
 
   &--primary {
-    @include button-style(white, get-color(primary, 0), get-color(primary, 0), white, get-color(primary, 0), get-color(primary, 1));
+    background: get-color(primary, 0);
+    color:white;
     &:active {
       background: get-color(primary, 0);
-      color: white;
+      color: $color-white;
+    }
+    &:hover {
+      background: get-color(primary, 1);
+      box-shadow: 0 5px 20px 0 rgba(29,29,31,.09);
+      opacity: .9;
+    }
+    &:active {
+      transform: scale(.92);
     }
   }
   &--dark {
@@ -46,7 +53,7 @@ $ico-dim: rem(32px);
     border: 1px solid get-color(bg, 3);
     &:active {
       background: get-color(bg, 3);
-      color: white;
+      color: $color-white;
     }	
     @include media('<=sm') {
       width: 250px;
@@ -59,24 +66,23 @@ $ico-dim: rem(32px);
     border-radius: $b-rad;
     cursor: pointer;
     transition: all $tt;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
     &:active {
       background: get-color(bg, 4);
-      color: white;
+      color: $color-white;
     }	
   }
   &--yellow {
     @include button-style(white, get-color(bg, 5), get-color(bg, 5), white, get-color(bg, 5), get-color(bg, 5));
     &:active {
       background: get-color(bg, 6);
-      color:white;
+      color:$color-white;
     }
   }
   &--grey {
     @include button-style(white, get-color(bg, 5), get-color(bg, 5), white, get-color(bg, 5), get-color(bg, 5));
     &:active {
       background: get-color(bg, 5);
-      color:white;
+      color:$color-white;
     }
   }
   &--beige {
@@ -86,7 +92,7 @@ $ico-dim: rem(32px);
 
 .btn-simple {
   margin: $mt 1rem 0 0;
-  @include rem(font-size, $textBase);
+  @include rem(font-size, $base-font-size);
 
   &--muted {
     color:get-color(bg,0);

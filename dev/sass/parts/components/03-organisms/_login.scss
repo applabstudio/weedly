@@ -50,7 +50,7 @@
 
 				h1 {
 					@include set-font($base-font-family, normal, normal, 3.2rem);
-					text-align: center;
+					text-align: left;
 				}
 
 				.social-signin {
@@ -64,5 +64,4 @@
 				}
 			}
 		}
-
 	}
