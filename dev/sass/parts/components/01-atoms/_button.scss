@@ -1,14 +1,13 @@
 // vars
-$p: rem(16px 40px);
-$fw: 500;
+$p: rem(8.3px 40px);
 $b-rad: 6px;
 $lh: 1.6;
 $ico-dim: rem(32px);
 
 // Structure Button
 .btn {
-  @include set-font($base-font-family, $fw, normal, $base-font-size);
-  @include size(100%, auto);
+  @include set-font($base-font-family, normal, normal, $small-font-size);
+  @include size(12.6rem, 4rem);
   padding: $p;
   line-height: $lh;
   text-decoration: none;
@@ -39,15 +38,18 @@ $ico-dim: rem(32px);
       transform: scale(.92);
     }
   }
+
   &--dark {
     @include button-style(white, black, black, white, black, black);
+    @include size(15rem, 4rem);
     &:active {
       background: white ;
       color: black;
     }	
   }
+
   &--google {
-    @include button-style(white, get-color(bg, 3), get-color(bg, 3), white, get-color(bg, 3), get-color(bg, 3));
+    @include button-style(white, white, get-color(bg, 3), get-color(bg, 6), get-color(bg, 6), get-color(bg, 6));
     width: 324px;
     border-radius: $b-rad;
     border: 1px solid get-color(bg, 3);
@@ -59,11 +61,13 @@ $ico-dim: rem(32px);
       width: 250px;
     }
   }
+
   &--facebook {
-    @include button-style(white, get-color(bg, 4), get-color(bg, 4), white, get-color(bg, 4), get-color(bg, 4));
+    @include button-style(white, white, get-color(bg, 4), get-color(bg, 7), get-color(bg, 7), get-color(bg, 7));
     width: 60px;
-    font-size:1.6rem;
+    font-size: $base-font-size;
     border-radius: $b-rad;
+    border: 1px solid get-color(bg, 4);
     cursor: pointer;
     transition: all $tt;
     &:active {
@@ -71,43 +75,19 @@ $ico-dim: rem(32px);
       color: $color-white;
     }	
   }
-  &--yellow {
-    @include button-style(white, get-color(bg, 5), get-color(bg, 5), white, get-color(bg, 5), get-color(bg, 5));
-    &:active {
-      background: get-color(bg, 6);
-      color:$color-white;
-    }
-  }
+
   &--grey {
     @include button-style(white, get-color(bg, 5), get-color(bg, 5), white, get-color(bg, 5), get-color(bg, 5));
+    border-radius: $b-rad;
+    border: 1px solid get-color(bg, 5);
     &:active {
       background: get-color(bg, 5);
       color:$color-white;
     }
   }
-  &--beige {
-    @include button-style(get-color(beige-dark, 1), get-color(bg, 10), get-color(bg, 10), get-color(primary, 0), get-color(bg, 10), get-color(bg, 10));
-  }
-}
 
-.btn-simple {
-  margin: $mt 1rem 0 0;
-  @include rem(font-size, $base-font-size);
-
-  &--muted {
-    color:get-color(bg,0);
-  }
-  &--primary {
-    color: get-color(beige-dark,1);
-    font-weight: $fw;
-  }
-}
-
-.btn-gray {
-  background: rgba(226, 224, 219, 0.5);
-   span{
-    margin-right: 14px;
-    margin-bottom: 10px;
+  @include media('<=md') {
+    width: 100%
   }
 }
 

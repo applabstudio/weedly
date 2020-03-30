@@ -92,7 +92,9 @@ $colors: (
     2: rgb(19, 167, 71),
     3: #DB3236, //Google
     4: #3B5998, //Facebook
-    5: #768093
+    5: #768093,
+    6: #de4649, //Google hover
+    7: #4e69a2, //Facebook hover
   ),
   modal: (
     0: #fffffff0
@@ -158,8 +160,9 @@ $base-background-color: $color-white !default;
 // fonts
 $base-font-family: 'Sarabun', sans-serif;
 
-$base-font-size: 16px !default;
-$base-line-height: 24px !default;
+$base-font-size: 1.6rem !default;
+$base-line-height: 2.4rem !default;
+$small-font-size: 1.4rem !default;
 
 // Font Weights
 $font-weight-light: 300 !default;
@@ -193,4 +196,4 @@ $link-color: $color-weedly;
 $link-hover-color: $color-weedly;
 
 // Transitions
-$tt: 0.5s;
+$tt: 0.4s;
