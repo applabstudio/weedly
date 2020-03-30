@@ -74,6 +74,10 @@ $ico-dim: rem(32px);
       background: get-color(bg, 4);
       color: $color-white;
     }	
+
+    @include media('<=md') {
+      width: 15%;
+    }
   }
 
   &--grey {

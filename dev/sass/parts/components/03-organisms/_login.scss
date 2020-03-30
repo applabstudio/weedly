@@ -51,12 +51,22 @@
 				h1 {
 					@include set-font($base-font-family, normal, normal, 3.2rem);
 					text-align: left;
+					@include media('<=md') {
+						text-align: center;
+					}
 				}
 
 				.social-signin {
 					@include flexbox();
 					@include justify-content(space-between);
 					padding: 4rem 0 0 0;
+
+					button:first-child {
+						@include media('<=md') {
+							width: 80%;
+						}
+					}
+
 				}
 				
 				.uk-divider-icon {
