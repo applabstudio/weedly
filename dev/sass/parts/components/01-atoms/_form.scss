@@ -16,6 +16,9 @@
 		@include flexbox();
 		@include justify-content(space-between);
 		@include align-items(center);
+		label:last-child {
+			width: 45%;
+		}
 	}
 
 	button {
