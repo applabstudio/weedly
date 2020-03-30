@@ -15,15 +15,6 @@
 		@include flexbox();
 		@include justify-content(center);
 		@include align-items(center);
-
-		p {
-			color: white;
-			@include set-font($base-font-family, normal, normal, 2.4rem);	
-			padding-bottom: 1.6rem;
-			@include media('<=md') {
-				text-align: center;
-			}
-		}
 	}
 
 	&__header {
@@ -40,7 +31,7 @@
 		&__wrapper {
 			@include flexbox();
 			@include justify-content(flex-start);
-			padding-bottom:16rem;
+			padding-bottom:13.5rem;
 
 			@include media('<=lg') {
 				@include justify-content(center);
@@ -48,8 +39,13 @@
 			}
 		}
 	}
-	
+
 	&__footer {
+
+		.welcome {
+			padding-bottom: 4rem;
+		}
+
 		@include media('<=lg') {
 			@include justify-content(center);
 		}

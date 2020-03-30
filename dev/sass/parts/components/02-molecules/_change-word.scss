@@ -1,0 +1,73 @@
+.change-words{
+  width: 50%;
+  word-wrap: break-word;
+  font-size: 3em;
+  display: inline-block;
+  position:relative;
+  top:-2.7rem;
+  color: white;
+  @include set-font($base-font-family, normal, normal, 2.4rem);	
+	
+}
+
+.sentence {
+     word-wrap: break-word;
+    color: white;
+	@include set-font($base-font-family, normal, normal, 2.4rem);	
+}
+
+.change-words span {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-animation: animateWord 18s linear infinite 0s;
+    -ms-animation: changeWord 18s linear infinite 0s;
+    animation: changeWord 18s linear infinite 0s;
+}
+
+.change-words span:nth-child(2) { 
+    -webkit-animation-delay: 3s; 
+    -ms-animation-delay: 3s; 
+    animation-delay: 3s; 
+    color: white;
+}
+
+.change-words span:nth-child(3) { 
+    -webkit-animation-delay: 6s; 
+    -ms-animation-delay: 6s; 
+    animation-delay: 6s; 
+    color: white;
+}
+
+.change-words span:nth-child(4) { 
+    -webkit-animation-delay: 9s; 
+    -ms-animation-delay: 9s; 
+    animation-delay: 9s; 
+    color: white;
+}
+
+.change-words span:nth-child(5) { 
+    -webkit-animation-delay: 12s; 
+    -ms-animation-delay: 12s; 
+    animation-delay: 12s; 
+    color: white;
+}
+
+.change-words span:nth-child(6) { 
+    -webkit-animation-delay: 15s; 
+    -ms-animation-delay: 15s; 
+    animation-delay: 15s; 
+    color: white;
+}
+
+
+
+@-webkit-keyframes changeWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+    5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+    20% { opacity: 0; -webkit-transform: translateY(30px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
