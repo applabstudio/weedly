@@ -82,6 +82,7 @@
 			margin-top: -10rem;
 			padding-bottom:7rem;
 			@include set-font($base-font-family, normal, normal, $base-font-size);
+			
 			@include media('<=md') {
 				width: 100%;
 				justify-content: center;

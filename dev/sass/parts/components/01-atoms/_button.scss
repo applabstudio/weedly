@@ -1,6 +1,6 @@
 // vars
 $p: rem(8.3px 40px);
-$b-rad: 6px;
+$b-rad: 8px;
 $lh: 1.6;
 $ico-dim: rem(32px);
 
@@ -58,6 +58,10 @@ $ico-dim: rem(32px);
     }	
     @include media('<=sm') {
       width: 250px;
+    }
+
+    i {
+      font-size: $base-font-size;
     }
   }
 
