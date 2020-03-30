@@ -10,12 +10,6 @@
 	
 }
 
-.sentence {
-     word-wrap: break-word;
-    color: white;
-	@include set-font($base-font-family, normal, normal, 2.4rem);	
-}
-
 .change-words span {
     position: absolute;
     opacity: 0;

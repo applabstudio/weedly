@@ -44,6 +44,11 @@
 
 		.welcome {
 			padding-bottom: 4rem;
+			&__title {
+				word-wrap: break-word;
+				color: white;
+				@include set-font($base-font-family, normal, normal, 2.4rem);	
+			}
 		}
 
 		@include media('<=lg') {
