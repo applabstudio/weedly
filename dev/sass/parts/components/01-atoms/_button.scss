@@ -31,7 +31,6 @@ $ico-dim: rem(32px);
     }
     &:hover {
       background: get-color(primary, 1);
-      box-shadow: 0 5px 20px 0 rgba(29,29,31,.09);
       opacity: .9;
     }
     &:active {
