@@ -95,5 +95,9 @@
 				padding: 0 0 2.4rem 0;
 				margin: unset;
 			}
+
+			@include media('<=sm') {
+				@include justify-content(center);
+			}
 		}
 	}

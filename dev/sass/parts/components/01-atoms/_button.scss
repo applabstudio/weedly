@@ -102,6 +102,9 @@ $ico-dim: rem(32px);
 
 .btn-large {
   width: 21.4rem;
+  @include media('<=sm') {
+    width: 100%;
+  }
 }
 //   @include when-inside('.') {
 //     @include size(100%, auto);
