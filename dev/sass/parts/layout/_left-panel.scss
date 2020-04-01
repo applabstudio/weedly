@@ -9,6 +9,7 @@
 	&__wrapper {
 		height:100%;
 		@include flexbox();
+		@include align-items(center);
 	}
 
 	&__body {
@@ -26,6 +27,15 @@
 
 		@include media('<=lg') {
 			@include justify-content(center);
+		}
+
+		@include media('<=md') {
+			@include flex-flow(row);
+			@include align-items(center);
+		}
+
+		@include media('<=sm') {
+			@include flex-flow(column);
 		}
 
 		&__wrapper {
@@ -54,6 +64,16 @@
 
 		@include media('<=lg') {
 			@include justify-content(center);
+		}
+
+		@include media('<=md') {
+			width: 25rem;
+			padding-left: 6rem;
+		}
+
+		@include media('<=sm') {
+			width: unset;
+			padding-left: unset;
 		}
 	}
 }
