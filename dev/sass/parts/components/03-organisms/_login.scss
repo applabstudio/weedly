@@ -49,6 +49,10 @@
 						margin: 0 auto;
 						position: unset;
 					}
+
+					@include media('<=sm') {
+						width: unset;
+					}
 				}
 
 				h1 {
@@ -69,7 +73,6 @@
 							width: 80%;
 						}
 					}
-
 				}
 				
 				.uk-divider-icon {
@@ -88,7 +91,7 @@
 			
 			@include media('<=md') {
 				width: 100%;
-				justify-content: center;
+				@include justify-content(flex-start);
 				padding: 0 0 2.4rem 0;
 				margin: unset;
 			}

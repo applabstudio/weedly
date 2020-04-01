@@ -21,6 +21,16 @@
 		}
 	}
 
+	.privacy-policy {
+		@include flexbox();
+		@include align-items(baseline);
+		label {
+			@include set-font($base-font-family, normal, normal, $small-font-size);
+			padding-left: 1rem;
+		}
+
+	}
+
 	button {
 		width: 12.6rem;
 
