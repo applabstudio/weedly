@@ -16,7 +16,10 @@ $ico-dim: rem(32px);
   transition: all $tt;
   border:none;
   border-radius: $b-rad;
-
+  @include media('<=sm') {
+    width: 100%
+  }
+  
   svg {
     @include size($ico-dim, $ico-dim);
     transition: all $tt;
@@ -56,13 +59,9 @@ $ico-dim: rem(32px);
       background: get-color(bg, 3);
       color: $color-white;
     }
-    	
+    
     @include media('<=md') {
       width: 80%;
-    }
-
-    @include media('<=sm') {
-      width: 250px;
     }
 
     i {
@@ -98,9 +97,7 @@ $ico-dim: rem(32px);
     }
   }
 
-  @include media('<=sm') {
-    width: 100%
-  }
+
 }
 
 .btn-large {
