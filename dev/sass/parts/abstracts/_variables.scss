@@ -83,12 +83,13 @@ $text-color: black;
 
 $colors: (
   primary: (
-    0: #28C660,
+    0: #28C660, //Primary
     1: #3ccb6f, //hover
+    2: #768093, //Secondary
   ),
   bg: (
     0: #F3F3F4,
-    1: #28C660,
+    1: #28C660, // weedly green
     2: rgb(19, 167, 71),
     3: #DB3236, //Google
     4: #3B5998, //Facebook
@@ -102,14 +103,12 @@ $colors: (
 );
 
 // Main Colors
-$color-weedly:    #28C660 !default; // weedly green
 $color-info:      #2083FE !default; // blue
 $color-success:   #2FCA74 !default; // green
 $color-warning:   #f5b848 !default; // yellow
 $color-danger:    #ED4D4D !default; // red
 $color-fancy: 	  #6F35F0 !default; // purple
 $color-primary:   #252529 !default; // black
-$color-secondary: #768093 !default; // grey
 
 // Extra Colors
 $color-pink: #F44C67 !default; // pink
@@ -145,17 +144,8 @@ $gradient-weedly:    #28C660, #20BE58 !default;
 // Extra Gradients
 $gradient-fancy: #4F5EF5, #6A77FF; // purple
 
-
-// Brand Color
-//
-// The brand color of the whole kit, will affect most UI components like toggles,
-// buttons and switchs.
-//
-
-$brand-color: $color-weedly !default;
 $body-background-color: $color-sky-light !default;
 $base-background-color: $color-white !default;
-
 
 // fonts
 $base-font-family: 'Karla', sans-serif;
@@ -190,10 +180,6 @@ $h3-font-size: rem(24px) !default;
 $h4-font-size: rem(20px) !default;
 $h5-font-size: rem(18px) !default;
 $h6-font-size: rem(16px) !default;
-
-// Links
-$link-color: $color-weedly;
-$link-hover-color: $color-weedly;
 
 // Transitions
 $tt: 0.4s;

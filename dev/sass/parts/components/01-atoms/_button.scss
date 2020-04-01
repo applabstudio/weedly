@@ -42,7 +42,7 @@ $ico-dim: rem(32px);
   }
 
   &--dark {
-    @include button-style(white, black, black, white, black, black);
+    @include button-style(white, white, black, #252529, white, black);
     @include size(15rem, 4rem);
     &:active {
       background: white ;
@@ -66,6 +66,7 @@ $ico-dim: rem(32px);
 
     i {
       font-size: $base-font-size;
+      margin: 0.2rem 0.2rem;
     }
   }
 
