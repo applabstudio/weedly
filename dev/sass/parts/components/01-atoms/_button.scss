@@ -93,7 +93,7 @@ $ico-dim: rem(32px);
     }
   }
 
-  @include media('<=md') {
+  @include media('<=sm') {
     width: 100%
   }
 }

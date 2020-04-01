@@ -6,14 +6,17 @@
 		@include justify-content(center);
 		height:100%;
 
-		@include media('<=md') {
+		@include media('<=lg') {
 			width: 90%;
 			margin: 0 auto;
 		}	
 
+		@include media('<=md') {
+			width: 60%;
+		}
+
 		@include media('<=sm') {
 			width: 90%;
-			margin: 0 auto;
 		}
 
 		&__wrapper {
