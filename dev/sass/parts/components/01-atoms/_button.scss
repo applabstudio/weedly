@@ -48,6 +48,9 @@ $ico-dim: rem(32px);
       background: white ;
       color: black;
     }	
+    @include media('<=sm') {
+      width: 100%;
+    }
   }
 
   &--google {
