@@ -63,16 +63,16 @@
 					}
 				}
 
+				p {
+					@include set-font($base-font-family, normal, normal, $small-font-size);
+					color: $color-secondary;
+					padding: 2rem 0;
+				}
+
 				.social-signin {
 					@include flexbox();
 					@include justify-content(space-between);
 					padding: 4rem 0 0 0;
-
-					button:first-child {
-						@include media('<=md') {
-							width: 80%;
-						}
-					}
 				}
 				
 				.uk-divider-icon {

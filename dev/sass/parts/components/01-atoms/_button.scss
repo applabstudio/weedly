@@ -55,7 +55,12 @@ $ico-dim: rem(32px);
     &:active {
       background: get-color(bg, 3);
       color: $color-white;
-    }	
+    }
+    	
+    @include media('<=md') {
+      width: 80%;
+    }
+
     @include media('<=sm') {
       width: 250px;
     }
@@ -98,6 +103,9 @@ $ico-dim: rem(32px);
   }
 }
 
+.btn-large {
+  width: 21.4rem;
+}
 //   @include when-inside('.') {
 //     @include size(100%, auto);
 //   }

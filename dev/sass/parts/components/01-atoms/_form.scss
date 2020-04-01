@@ -28,14 +28,5 @@
 			@include set-font($base-font-family, normal, normal, $small-font-size);
 			padding-left: 1rem;
 		}
-
-	}
-
-	button {
-		width: 12.6rem;
-
-		@include media('<=md') {
-			width: 100%;
-		}
 	}
 }
