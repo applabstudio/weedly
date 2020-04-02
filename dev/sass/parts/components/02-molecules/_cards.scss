@@ -1,0 +1,48 @@
+.cards-container {
+	.card {
+		height: 80rem;
+		.uk-card-body {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+
+			h3 {
+				@include set-font($base-font-family, normal, normal, 5rem);
+
+				@include media('<=md') {
+					@include set-font($base-font-family, normal, normal, 2.4rem);
+				}
+			}
+
+			p {
+				@include set-font($base-font-family, normal, normal, 2rem);
+				color: $color-ink-light;
+				padding: 2rem 0;
+
+				@include media('<=md') {
+					@include set-font($base-font-family, normal, normal, $base-font-size);
+				}
+			}
+
+			&__buttons {
+				@include flexbox();
+				@include justify-content(flex-start);
+				width: 100%;
+
+				@include media('<=sm') {
+					@include flex-direction(column);
+				}
+
+				a {
+					padding: 2rem 4rem 0 0;
+
+					@include media('<=sm') {
+						padding: 2rem 0 0 0;
+					}
+				}
+			}
+		}
+	}
+}
