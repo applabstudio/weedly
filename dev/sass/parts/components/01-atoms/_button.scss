@@ -92,9 +92,8 @@ $ico-dim: rem(32px);
   }
 
   &--grey {
-    @include button-style(white, get-color(bg, 5), get-color(bg, 5), white, get-color(bg, 5), get-color(bg, 5));
+    @include button-style(white, white, get-color(bg, 5), #969FB0, get-color(bg, 5), get-color(bg, 5));
     border-radius: $b-rad;
-    border: 1px solid get-color(bg, 5);
     &:active {
       background: get-color(bg, 5);
       color:$color-white;
