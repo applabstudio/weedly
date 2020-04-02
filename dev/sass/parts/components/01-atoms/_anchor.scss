@@ -1,7 +1,8 @@
 .link-text {
-  @include set-font($base-font-family, normal, normal, 1.4rem);	
+  @include set-font($base-font-family, normal, normal, 1.4rem);
   text-decoration: none;
   color: get-color(primary, 0);
+
   &:hover {
     transition: all $tt;
     color: get-color(primary, 1);

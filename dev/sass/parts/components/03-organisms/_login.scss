@@ -103,6 +103,7 @@
 
     &__account {
       @include flexbox();
+      align-items: center;
       width: 100%;
     }
 
