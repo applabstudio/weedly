@@ -2,7 +2,7 @@
   background: get-color(bg, 1);
   @include size(480px, 100vh);
 
-  @include media('<=sm') {
+  @include media('<=md') {
     @include size(100%, 50vh);
   }
 
