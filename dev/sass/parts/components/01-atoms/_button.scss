@@ -45,8 +45,9 @@ $ico-dim: rem(32px);
     @include button-style(white, white, black, #252529, white, black);
     @include size(15rem, 4rem);
     &:active {
-      background: white ;
-      color: black;
+      background: black ;
+      color: white;
+      transform: scale(.92);
     }	
     @include media('<=sm') {
       width: 100%;
@@ -61,6 +62,7 @@ $ico-dim: rem(32px);
     &:active {
       background: get-color(bg, 3);
       color: $color-white;
+      transform: scale(.92);
     }
     
     @include media('<=md') {
@@ -84,6 +86,7 @@ $ico-dim: rem(32px);
     &:active {
       background: get-color(bg, 4);
       color: $color-white;
+      transform: scale(.92);
     }	
 
     @include media('<=md') {
@@ -97,6 +100,7 @@ $ico-dim: rem(32px);
     &:active {
       background: get-color(bg, 5);
       color:$color-white;
+      transform: scale(.92);
     }
   }
 
