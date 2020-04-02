@@ -2,11 +2,11 @@ $sm-h: rem(200px);
 
 .logo {
   display: block;
-//   @include shadow-logo();
+  //   @include shadow-logo();
 
 
   &--small {
-    max-height: $sm-h
+    max-height: 90px;
   }
 
 }

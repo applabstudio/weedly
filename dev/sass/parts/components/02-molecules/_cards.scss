@@ -1,48 +1,54 @@
 .cards-container {
-	.card {
-		height: 80rem;
-		.uk-card-body {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			height: 100%;
+  .card {
+    height: 100vh;
 
-			h3 {
-				@include set-font($base-font-family, normal, normal, 5rem);
+    .uk-card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      padding: 40px 80px;
 
-				@include media('<=md') {
-					@include set-font($base-font-family, normal, normal, 2.4rem);
-				}
-			}
+      @include media('<=sm') {
+        padding: 20px 40px;
+      }
 
-			p {
-				@include set-font($base-font-family, normal, normal, 2rem);
-				color: $color-ink-light;
-				padding: 2rem 0;
+      h3 {
+        @include set-font($base-font-family, normal, normal, 5rem);
+        line-height: 1.2;
 
-				@include media('<=md') {
-					@include set-font($base-font-family, normal, normal, $base-font-size);
-				}
-			}
+        @include media('<=md') {
+          @include set-font($base-font-family, normal, normal, 2.4rem);
+        }
+      }
 
-			&__buttons {
-				@include flexbox();
-				@include justify-content(flex-start);
-				width: 100%;
+      p {
+        @include set-font($base-font-family, normal, normal, 2rem);
+        color: $color-ink-light;
+        padding: 2rem 0;
 
-				@include media('<=sm') {
-					@include flex-direction(column);
-				}
+        @include media('<=md') {
+          @include set-font($base-font-family, normal, normal, $base-font-size);
+        }
+      }
 
-				a {
-					padding: 2rem 4rem 0 0;
+      &__buttons {
+        @include flexbox();
+        @include justify-content(flex-start);
+        width: 100%;
 
-					@include media('<=sm') {
-						padding: 2rem 0 0 0;
-					}
-				}
-			}
-		}
-	}
+        @include media('<=sm') {
+          @include flex-direction(column);
+        }
+
+        a {
+          padding: 2rem 2rem 0 0;
+
+          @include media('<=sm') {
+            padding: 2rem 0 0 0;
+          }
+        }
+      }
+    }
+  }
 }

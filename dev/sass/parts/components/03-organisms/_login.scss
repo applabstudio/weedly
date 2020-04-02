@@ -1,115 +1,120 @@
 .login {
-		@include relative();
-		@include flexbox();
-		@include flex-direction(column);
-		@include align-items(center);
-		@include justify-content(center);
-		height:100%;
+  @include relative();
+  @include flexbox();
+  @include flex-direction(column);
+  @include align-items(center);
+  @include justify-content(center);
+  height: 100%;
 
-		@include media('<=lg') {
-			width: 90%;
-			margin: 0 auto;
-		}	
+  @include media('<=lg') {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-		@include media('<=md') {
-			width: 60%;
-		}
+  @include media('<=md') {
+    width: 60%;
+  }
 
-		@include media('<=sm') {
-			width: 93%;
-		}
+  @include media('<=sm') {
+    width: 85%;
+  }
 
-		&__wrapper {
-			@include flexbox();
-			@include flex-direction(column);	
-			@include size(100%, 100vh);
-			@include align-items(center);
-			@include justify-content(center);
+  &__wrapper {
+    @include flexbox();
+    @include flex-direction(column);
+    @include size(100%, 100vh);
+    @include align-items(center);
+    @include justify-content(center);
 
-			@include media('<=md') {
-				justify-content: unset;
-				height: unset;
-			}
+    @include media('<=md') {
+      justify-content: unset;
+      height: unset;
+    }
 
-			&__header {
-				width: 40rem;
-				padding: 1.4rem 0;
+    &__header {
+      width: 40rem;
+      padding: 1.4rem 0;
 
-				@include media('<=md') {
-					padding: unset;
-					width: 100%;
-				}
+      @include media('<=md') {
+        padding: unset;
+        width: 100%;
+      }
 
-				.business {
-					@include absolute(top 4rem right 0);
-					width: 12.4rem;
-					padding-bottom: 2rem;
+      .business {
+        @include absolute(top 4rem right 0);
+        width: 12.4rem;
+        padding-bottom: 2rem;
 
-					@include media('<=md') {
-						display: none;
-					}
-				}
+        @include media('<=md') {
+          display: none;
+        }
+      }
 
-				h1 {
-					@include set-font($base-font-family, normal, normal, 3.2rem);
-					text-align: left;
-					@include media('<=md') {
-						text-align: center;
-					}
-				}
+      h1 {
+        @include set-font($base-font-family, normal, normal, 3.2rem);
+        text-align: left;
 
-				p {
-					@include set-font($base-font-family, normal, normal, $small-font-size);
-					color: get-color(primary, 2);
-					padding: 2rem 0;
-				}
+        @include media('<=md') {
+          text-align: center;
+        }
 
-				.social-signin {
-					@include flexbox();
-					@include justify-content(space-between);
-					padding: 4rem 0 0 0;
-				}
-				
-				.uk-divider-icon {
-					margin-bottom: 0;
-				}
-			}
-		}
+        @include media('<=sm') {
+          font-size: 2.4rem;
+        }
+      }
 
-		&__footer {
-			width: 40rem;
-			@include flexbox();
-			@include align-items(center);
-			margin-top: -10rem;
-			padding-bottom:7rem;
-			@include set-font($base-font-family, normal, normal, $base-font-size);
-			
-			@include media('<=md') {
-				width: 100%;
-				@include justify-content(flex-start);
-				padding: 0 0 2.4rem 0;
-				margin: unset;
-				@include flex-direction(column);
-			}
+      p {
+        @include set-font($base-font-family, normal, normal, $small-font-size);
+        color: get-color(primary, 2);
+        padding: 2rem 0;
+      }
 
-			@include media('<=sm') {
-				@include justify-content(center);
-			}
+      .social-signin {
+        @include flexbox();
+        @include justify-content(space-between);
+        padding: 4rem 0 0 0;
+      }
 
-			&__account {
-				@include flexbox();
-				width: 100%;
-			}
+      .uk-divider-icon {
+        margin-bottom: 0;
+      }
+    }
+  }
 
-			.business-mobile {
-				padding-top: 2rem;
-				width: 100%;
-				@include flexbox();
-				@include justify-content(flex-end);
+  &__footer {
+    width: 40rem;
+    @include flexbox();
+    @include align-items(center);
+    margin-top: -6rem;
+    padding-bottom: 0rem;
+    @include set-font($base-font-family, normal, normal, $base-font-size);
 
-				@include media('>=md') {
-					display: none;
-				}
-			}
-		}
-	}
+    @include media('<=md') {
+      width: 100%;
+      @include justify-content(flex-start);
+      padding: 0 0 2.4rem 0;
+      margin: unset;
+      @include flex-direction(column);
+    }
+
+    @include media('<=sm') {
+      @include justify-content(center);
+    }
+
+    &__account {
+      @include flexbox();
+      width: 100%;
+    }
+
+    .business-mobile {
+      padding-top: 2rem;
+      width: 100%;
+      @include flexbox();
+      @include justify-content(flex-end);
+
+      @include media('>=md') {
+        display: none;
+      }
+    }
+  }
+}

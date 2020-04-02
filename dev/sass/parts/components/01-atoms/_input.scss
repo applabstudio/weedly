@@ -1,11 +1,14 @@
 	.input-normal {
-		background: get-color(bg, 0);
-		height: 4rem;
-		border: 1px solid transparent;
-		border-radius: 4px;
-		@include set-font($base-font-family, normal, normal, 1.6rem);	
+	  background: get-color(bg, 0);
+	  height: 4rem;
+	  border: 1px solid transparent;
+	  border-radius: 4px;
+	  @include set-font($base-font-family, normal, normal, 1.6rem);
+	  display: block;
 	}
 
-	.uk-input:focus, .uk-select:focus, .uk-textarea:focus {
-		border: 1px solid get-color(bg, 1);
+	.uk-input:focus,
+	.uk-select:focus,
+	.uk-textarea:focus {
+	  border: 1px solid get-color(bg, 1);
 	}

@@ -1,67 +1,105 @@
-.change-words{
+.change-words {
   width: 50%;
   word-wrap: break-word;
   font-size: 3em;
   display: inline-block;
-  position:relative;
-  top:-2.7rem;
+  position: relative;
+  top: -2.7rem;
   color: white;
-  @include set-font($base-font-family, normal, normal, 2.4rem);	
-	
+  @include set-font($base-font-family, normal, normal, 2.4rem);
+
+  @include media('<=sm') {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+  }
+
 }
 
 .change-words span {
-    position: absolute;
-    opacity: 0;
-    overflow: hidden;
-    -webkit-animation: animateWord 18s linear infinite 0s;
-    -ms-animation: changeWord 18s linear infinite 0s;
-    animation: changeWord 18s linear infinite 0s;
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-animation: animateWord 18s linear infinite 0s;
+  -ms-animation: changeWord 18s linear infinite 0s;
+  animation: changeWord 18s linear infinite 0s;
+  font-weight: 700;
+
+  @include media('<=sm') {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
 
-.change-words span:nth-child(2) { 
-    -webkit-animation-delay: 3s; 
-    -ms-animation-delay: 3s; 
-    animation-delay: 3s; 
-    color: white;
+.change-words span:nth-child(2) {
+  -webkit-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+  animation-delay: 3s;
+  color: white;
 }
 
-.change-words span:nth-child(3) { 
-    -webkit-animation-delay: 6s; 
-    -ms-animation-delay: 6s; 
-    animation-delay: 6s; 
-    color: white;
+.change-words span:nth-child(3) {
+  -webkit-animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  animation-delay: 6s;
+  color: white;
 }
 
-.change-words span:nth-child(4) { 
-    -webkit-animation-delay: 9s; 
-    -ms-animation-delay: 9s; 
-    animation-delay: 9s; 
-    color: white;
+.change-words span:nth-child(4) {
+  -webkit-animation-delay: 9s;
+  -ms-animation-delay: 9s;
+  animation-delay: 9s;
+  color: white;
 }
 
-.change-words span:nth-child(5) { 
-    -webkit-animation-delay: 12s; 
-    -ms-animation-delay: 12s; 
-    animation-delay: 12s; 
-    color: white;
+.change-words span:nth-child(5) {
+  -webkit-animation-delay: 12s;
+  -ms-animation-delay: 12s;
+  animation-delay: 12s;
+  color: white;
 }
 
-.change-words span:nth-child(6) { 
-    -webkit-animation-delay: 1s; 
-    -ms-animation-delay: 1s; 
-    animation-delay: 1s; 
-    color: white;
+.change-words span:nth-child(6) {
+  -webkit-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  animation-delay: 1s;
+  color: white;
 }
 
 
 
 @-webkit-keyframes changeWord {
-    0% { opacity: 0; }
-    2% { opacity: 0; -webkit-transform: translateY(-30px); }
-    5% { opacity: 1; -webkit-transform: translateY(0px);}
-    17% { opacity: 1; -webkit-transform: translateY(0px); }
-    20% { opacity: 0; -webkit-transform: translateY(30px); }
-    80% { opacity: 0; }
-    100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+
+  2% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+  }
+
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+
+  17% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }

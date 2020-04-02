@@ -1,79 +1,88 @@
 .left-panel {
-	background: get-color(bg, 1);
-	@include size(480px, 100vh);
-	
-	@include media('<=md') {
-		@include size(100%, 100vh);
-	}
+  background: get-color(bg, 1);
+  @include size(480px, 100vh);
 
-	&__wrapper {
-		height:100%;
-		@include flexbox();
-		@include align-items(center);
-	}
+  @include media('<=sm') {
+    @include size(100%, 50vh);
+  }
 
-	&__body {
-		@include flexbox();
-		@include justify-content(center);
-		@include align-items(center);
-	}
+  &__wrapper {
+    height: 100%;
+    @include flexbox();
+    @include align-items(center);
+  }
 
-	&__header {
-		@include flexbox();
-		@include flex-flow(column);
-		@include justify-content(center);
-		height: 100%;
-		
+  &__body {
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+  }
 
-		@include media('<=lg') {
-			@include justify-content(center);
-		}
+  &__header {
+    @include flexbox();
+    @include flex-flow(column);
+    @include justify-content(center);
+    height: 100%;
 
-		@include media('<=md') {
-			@include flex-flow(row);
-			@include align-items(center);
-		}
 
-		@include media('<=sm') {
-			@include flex-flow(column);
-		}
+    @include media('<=lg') {
+      @include justify-content(center);
+    }
 
-		&__wrapper {
-			@include flexbox();
-			@include justify-content(flex-start);
-			padding-bottom:13.5rem;
+    @include media('<=md') {
+      @include flex-flow(row);
+      @include align-items(center);
+    }
 
-			@include media('<=lg') {
-				@include justify-content(center);
-				padding-bottom:2rem;
-			}
-		}
-	}
+    @include media('<=sm') {
+      @include flex-flow(column);
+      padding: 0 15px;
+    }
 
-	&__footer {
+    &__wrapper {
+      @include flexbox();
+      @include justify-content(flex-start);
+      padding-bottom: 13.5rem;
 
-		.welcome {
-			padding-bottom: 4rem;
-			
-			&__title {
-				word-wrap: break-word;
-				color: white;
-				@include set-font($base-font-family, normal, normal, 2.4rem);	
-			}
-		}
+      @include media('<=lg') {
 
-		@include media('<=lg') {
-			@include justify-content(center);
-		}
+        padding-bottom: 2rem;
+      }
+    }
+  }
 
-		@include media('<=md') {
-			width: 40rem;
-			padding-left: 6rem;
-		}
+  &__footer {
 
-		@include media('<=sm') {
-			width: unset;
-			padding-left: unset;
-		}
-	}
+    .welcome {
+      padding-bottom: 4rem;
+
+      @include media('<=sm') {
+        text-align: center;
+      }
+
+      &__title {
+        word-wrap: break-word;
+        color: white;
+        @include set-font($base-font-family, normal, normal, 2.4rem);
+
+        @include media('<=sm') {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    @include media('<=lg') {
+      @include justify-content(center);
+    }
+
+    @include media('<=md') {
+      width: 40rem;
+      padding-left: 6rem;
+    }
+
+    @include media('<=sm') {
+      width: unset;
+      padding-left: unset;
+    }
+  }
 }
