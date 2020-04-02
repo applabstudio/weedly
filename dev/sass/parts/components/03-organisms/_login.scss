@@ -46,12 +46,7 @@
 					padding-bottom: 2rem;
 
 					@include media('<=md') {
-						margin: 0 auto;
-						position: unset;
-					}
-
-					@include media('<=sm') {
-						width: unset;
+						display: none;
 					}
 				}
 
@@ -94,10 +89,27 @@
 				@include justify-content(flex-start);
 				padding: 0 0 2.4rem 0;
 				margin: unset;
+				@include flex-direction(column);
 			}
 
 			@include media('<=sm') {
 				@include justify-content(center);
+			}
+
+			&__account {
+				@include flexbox();
+				width: 100%;
+			}
+
+			.business-mobile {
+				padding-top: 2rem;
+				width: 100%;
+				@include flexbox();
+				@include justify-content(flex-end);
+
+				@include media('>=md') {
+					display: none;
+				}
 			}
 		}
 	}
