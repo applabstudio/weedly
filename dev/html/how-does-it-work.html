@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="/css/main.css">
   <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- Type -->
+  <script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
 </head>
 
 <body>
@@ -39,9 +41,10 @@
           </div>
           <div>
             <div class="uk-card-body">
-              <h3 class="uk-card-title">Un mercato sicuro dove trovare e acquistare cannabis</h3>
+              <h3 class="uk-card-title">Un mercato sicuro dove trovare e acquistare <div id="tit-type"></div>
+              </h3>
               <p>Accedi per entrare a far parte della nostra selezionata community. Aiutaci a crescere e ottieni subito
-                un Bonus da utilizzare all’interno del sito.</p>
+                Bonus da utilizzare all’interno del sito.</p>
               <div class="uk-card-body__buttons">
                 <a href="index.html"><button class="btn btn--primary">Accedi</button></a>
                 <a href="signup.html"><button class="btn btn--dark">Registrati</button></a>
@@ -100,7 +103,70 @@
     </div> <!-- /.main -->
 
   </div> <!-- /div.page -->
+  <script>
+    new TypeIt("#tit-type", {
+        speed: 100,
+        loop: true
+      })
+      .type("Erba Light", {
+        delay: 100
+      })
+      .pause(500)
+      .delete(10, {
+        delay: 300
+      })
+      .type("Hash Light", {
+        delay: 100
+      })
+      .pause(500)
+      .delete(10, {
+        delay: 300
+      })
+      .type("Cibo", {
+        delay: 100
+      })
+      .pause(500)
+      .delete(5, {
+        delay: 300
+      })
+      .type("Bevande", {
+        delay: 100
+      })
+      .pause(500)
+      .delete(8, {
+        delay: 300
+      })
+      .type("Accessori", {
+        delay: 100
+      })
+      .pause(500)
+      .delete(10, {
+        delay: 300
+      })
+      .type("Semi", {
+        delay: 100
+      })
+      .pause(500)
+      .delete(5, {
+        delay: 100
+      })
+      .type("Tessuti", {
+        delay: 100
+      })
+      .pause(500)
+      .delete(8, {
+        delay: 100
+      })
+      .type("Cosmetici", {
+        delay: 100
+      })
+      .pause(500)
+      .delete(10, {
+        delay: 100
+      })
+      .go();
 
+  </script>
   <script src="js/app.bundle.js"></script>
 </body>
 
