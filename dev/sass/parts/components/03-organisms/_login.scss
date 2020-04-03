@@ -16,7 +16,8 @@
   }
 
   @include media('<=sm') {
-    width: 85%;
+    width: 100%;
+    padding: 50px 30px;
   }
 
   &__wrapper {
@@ -99,6 +100,7 @@
 
     @include media('<=sm') {
       @include justify-content(center);
+      padding: 0;
     }
 
     &__account {
