@@ -72,7 +72,7 @@
       .social-signin {
         @include flexbox();
         @include justify-content(space-between);
-        padding: 4rem 0 0 0;
+        padding: 2rem 0 0 0;
       }
 
       .uk-divider-icon {

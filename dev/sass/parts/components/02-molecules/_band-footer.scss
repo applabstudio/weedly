@@ -1,42 +1,43 @@
 .band-footer {
-	background: get-color(primary, 0);
-	@include size(100%, 18.1rem);
-	@include flexbox();
-	@include justify-content(center);
-	@include align-items(center);
+  background: get-color(primary, 0);
+  @include size(100%, 100%);
+  @include flexbox();
+  @include justify-content(center);
+  @include align-items(center);
+  padding: 5rem;
 
-	@include media('<=md') {
-		@include flex-direction(column);
-	}
+  @include media('<=md') {
+    @include flex-direction(column);
+  }
 
-	&__wrapper {
-		display: flex;
-		align-items: center;
-		width: 90%;
-		justify-content: center;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-		@include media('<=md') {
-			@include flex-direction(column);
-		}
-	}
+    @include media('<=md') {
+      @include flex-direction(column);
+    }
+  }
 
-	p {
-		@include set-font($base-font-family, normal, normal, 4.2rem);
-		color: $color-white;
-		padding-right: 4rem;
+  p {
+    @include set-font($base-font-family, normal, normal, 4.2rem);
+    color: $color-white;
+    padding-right: 4rem;
 
-		@include media('<=md') {
-			font-size: 3.2rem;
-			padding: 2rem 0;
-		}
-	}
+    @include media('<=md') {
+      font-size: 3.2rem;
+      padding: 2rem 0;
+    }
+  }
 
-	button {
-		@include media('<=md') {
-			width: 19.7rem;
-		}
-		@include media('<=sm') {
-			width: 100%;
-		}
-	}
+  button {
+    @include media('<=md') {
+      width: 19.7rem;
+    }
+
+    @include media('<=sm') {
+      width: 100%;
+    }
+  }
 }

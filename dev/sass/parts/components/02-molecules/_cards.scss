@@ -7,14 +7,28 @@
       flex-direction: column;
       justify-content: center;
       height: 100%;
-      padding: 40px 80px;
+      padding: 40px 200px;
+
+      @include media('<=xl') {
+        padding: 0 120px;
+      }
+
+      @include media('<=lg') {
+        padding: 0 80px;
+      }
 
       @include media('<=sm') {
-        padding: 20px 40px;
+        padding: 0 40px;
+      }
+
+      #tit-type {
+        display: block;
+        font-weight: 700;
+        ;
       }
 
       h3 {
-        @include set-font($base-font-family, normal, normal, 5rem);
+        @include set-font($base-font-family, normal, normal, 4rem);
         line-height: 1.2;
 
         @include media('<=md') {
