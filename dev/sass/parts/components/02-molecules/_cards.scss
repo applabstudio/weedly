@@ -56,11 +56,15 @@
         }
 
         a {
-          padding: 2rem 2rem 0 0;
+          &:first-child {
+            margin-right: 10px;
 
-          @include media('<=sm') {
-            padding: 2rem 0 0 0;
+            @include media('<=sm') {
+              margin-bottom: 10px;
+            }
           }
+
+
         }
       }
     }

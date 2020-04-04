@@ -16,6 +16,15 @@ $ico-dim: rem(32px);
   transition: all $tt;
   border: none;
   border-radius: $b-rad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
 
   @include media('<=sm') {
     width: 100%
@@ -38,6 +47,8 @@ $ico-dim: rem(32px);
     &:hover {
       background: get-color(primary, 1);
       opacity: .9;
+      text-decoration: none;
+      color: #fff;
     }
 
     &:active {
@@ -53,6 +64,10 @@ $ico-dim: rem(32px);
       background: black;
       color: white;
       transform: scale(.92);
+    }
+
+    &:hover {
+      text-decoration: none;
     }
 
     @include media('<=sm') {

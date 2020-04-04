@@ -6,6 +6,10 @@
     @include size(100%, 50vh);
   }
 
+  &.left-business {
+    background-color: #768093;
+  }
+
   &__wrapper {
     height: 100%;
     @include flexbox();
@@ -90,6 +94,7 @@
     .btn {
       @include media('<=sm') {
         width: 170px;
+        margin: 0 auto;
       }
     }
 

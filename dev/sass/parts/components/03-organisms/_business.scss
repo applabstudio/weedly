@@ -1,0 +1,206 @@
+.business {
+  @include relative();
+  @include flexbox();
+  @include flex-direction(column);
+  @include align-items(center);
+  @include justify-content(center);
+  height: 100%;
+
+  @include media('<=md') {
+    width: 100%;
+    padding: 50px;
+  }
+
+  @include media('<=sm') {
+    width: 100%;
+    padding: 30px;
+  }
+
+  &__wrapper {
+    @include flexbox();
+    @include flex-direction(column);
+    @include size(100%, 100vh);
+    @include align-items(center);
+    @include justify-content(center);
+
+    @include media('<=md') {
+      justify-content: unset;
+      height: unset;
+    }
+
+    &__footer {
+
+      .link-text {
+        display: none;
+
+        @include media('<=sm') {
+          display: block;
+        }
+      }
+    }
+
+    &__toolbar {
+
+      .indietro {
+        @include absolute(top 4rem left 0);
+
+        @include media('<=md') {
+          display: none;
+        }
+
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 40px;
+          width: 40px;
+          background-color: #fff;
+          border: 1px solid #D0D4DA;
+          border-radius: 40px;
+          padding: 0;
+          line-height: 1.4;
+          color: #99A5BD;
+
+          &:hover,
+          &:focus {
+            text-decoration: none;
+            background-color: #28C660;
+            border: 1px solid #28C660;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    &__header {
+      width: 40rem;
+      padding: 0 0 20px;
+
+      @include media('<=md') {
+        width: 100%;
+        text-align: center;
+      }
+
+      h1 {
+        @include set-font($base-font-family, normal, normal, 3.2rem);
+        font-weight: 700;
+
+        @include media('<=sm') {
+          font-size: 2.4rem;
+        }
+      }
+
+      h2 {
+        @include set-font($base-font-family, normal, normal, 3.2rem);
+
+        @include media('<=sm') {
+          font-size: 2.4rem;
+        }
+      }
+
+      h3 {
+        @include set-font($base-font-family, normal, normal, 2rem);
+        color: get-color(primary, 2);
+        padding-top: 10px;
+
+        @include media('<=sm') {
+          font-size: 1.4rem;
+        }
+      }
+
+      p {
+        @include set-font($base-font-family, normal, normal, $small-font-size);
+        color: get-color(primary, 2);
+        padding: 2rem 0;
+      }
+
+      .cta {
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+
+        @include media('<=sm') {
+          flex-wrap: wrap;
+          padding-top: 0;
+        }
+
+        a {
+          &:first-child {
+            margin-right: 20px;
+
+            @include media('<=sm') {
+              margin-right: 0;
+              margin-bottom: 10px;
+            }
+          }
+
+          @include media('<=sm') {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    &__intro {
+      width: 60rem;
+      padding: 50px 20px;
+
+      @include media('<=md') {
+        padding: unset;
+        width: 100%;
+        text-align: left;
+      }
+
+      h1 {
+        @include set-font($base-font-family, normal, normal, 3.2rem);
+        font-weight: 700;
+        text-align: left;
+
+        @include media('<=sm') {
+          font-size: 2.4rem;
+        }
+      }
+
+      h2 {
+        @include set-font($base-font-family, normal, normal, 3.2rem);
+        text-align: left;
+
+        @include media('<=sm') {
+          font-size: 2.4rem;
+        }
+      }
+
+      p {
+        @include set-font($base-font-family, normal, normal, $small-font-size);
+        color: get-color(primary, 2);
+        padding: 2rem 0;
+      }
+
+      .cta {
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+
+        @include media('<=sm') {
+          flex-wrap: wrap;
+          padding-top: 0;
+        }
+
+        a {
+          &:first-child {
+            margin-right: 20px;
+
+            @include media('<=sm') {
+              margin-right: 0;
+              margin-bottom: 10px;
+            }
+          }
+
+          @include media('<=sm') {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

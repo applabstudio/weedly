@@ -41,7 +41,7 @@
         width: 100%;
       }
 
-      .business {
+      .business-btn {
         @include absolute(top 4rem right 0);
         width: 12.4rem;
         padding-bottom: 2rem;
@@ -123,6 +123,10 @@
       @include flexbox();
       align-items: center;
       width: 100%;
+
+      p {
+        font-size: 1.4rem;
+      }
     }
 
     .business-mobile {
