@@ -1,33 +1,35 @@
 .login-form {
-	width: 400px;
-	padding-bottom: 2.4rem;
+  width: 400px;
+  padding-bottom: 2.4rem;
 
-	@include media('<=md') {
-		width:100%;
-	}
-	
-	label {
-		@include set-font($base-font-family, 600, normal, 1.6rem);
-		display: inline-block;
-		margin:1rem 0;
-	}
+  @include media('<=md') {
+    width: 100%;
+  }
 
-	&__password {
-		@include flexbox();
-		@include justify-content(space-between);
-		@include align-items(center);
-		label:last-child {
-			width: 45%;
-		}
-	}
+  label {
+    @include set-font($base-font-family, 600, normal, 1.6rem);
+    display: inline-block;
+    margin: 1rem 0 0.5rem;
+  }
 
-	.privacy-policy {
-		@include flexbox();
-		@include align-items(baseline);
-		label {
-			@include set-font($base-font-family, normal, normal, $small-font-size);
-			padding-left: 1rem;
-		}
+  &__password {
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(center);
 
-	}
+    label:last-child {
+      width: 45%;
+    }
+  }
+
+  .privacy-policy {
+    @include flexbox();
+    @include align-items(baseline);
+
+    label {
+      @include set-font($base-font-family, normal, normal, $small-font-size);
+      margin: 0 0 2rem 0;
+    }
+
+  }
 }

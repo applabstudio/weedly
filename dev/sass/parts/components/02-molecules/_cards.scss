@@ -10,11 +10,11 @@
       padding: 40px 200px;
 
       @include media('<=xl') {
-        padding: 0 120px;
+        padding: 0 90px;
       }
 
       @include media('<=lg') {
-        padding: 0 80px;
+        padding: 0 70px;
       }
 
       @include media('<=sm') {

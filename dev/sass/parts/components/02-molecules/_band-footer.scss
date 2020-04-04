@@ -29,6 +29,11 @@
       font-size: 3.2rem;
       padding: 2rem 0;
     }
+
+    @include media('<=sm') {
+      font-size: 2.4rem;
+      padding: 0 0 2rem;
+    }
   }
 
   button {
