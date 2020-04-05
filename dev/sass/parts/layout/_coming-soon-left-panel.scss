@@ -1,8 +1,15 @@
 .coming-soon-left-panel {
-	width: 47%;
-	margin: 0 auto;
-	
-	@include media('<=md') {
-			width:100%;
-	}
+  width: 47%;
+  margin: 0 auto;
+
+  @include media('<=md') {
+    width: 100%;
+  }
+
+  .logo-container {
+
+    img {
+      width: 120px;
+    }
+  }
 }
