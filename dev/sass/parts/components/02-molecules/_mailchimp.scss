@@ -14,14 +14,19 @@
 	   .btn--primary {
 		@include size(14rem, 5rem);
 	   }
+	   
 	   input {
 			@include size(31.2rem, 5rem);
 			border-radius: 8px;
 			border: 1px solid get-color(input, 0);
 			padding-left: 2rem;
 			@include set-font($base-font-family, normal, normal, $small-font-size);
-		  @include media('<=md') {
+		
+			@include media('<=md') {
 			margin: 1rem 0;
+		  }
+		  &:focus {
+			border: 1px solid get-color(bg, 1);
 		  }
 	   }
  
