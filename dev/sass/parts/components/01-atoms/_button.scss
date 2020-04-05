@@ -8,6 +8,11 @@ $ico-dim: rem(32px);
 .btn {
   @include set-font($base-font-family, normal, normal, $small-font-size);
   @include size(12.6rem, 4rem);
+  display: inline-block;
+  text-decoration: none;
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(center);
   padding: $p;
   line-height: $lh;
   text-decoration: none;
@@ -71,7 +76,7 @@ $ico-dim: rem(32px);
 
     i {
       font-size: $base-font-size;
-      margin: 0.2rem 0.2rem;
+      padding-right: 1rem;
     }
   }
 
@@ -114,8 +119,12 @@ $ico-dim: rem(32px);
   }
 }
 
-.btn-xlarge {
-  @include size(14rem, 5rem);
+a.btn {
+  text-decoration: none;
+
+  &:hover {
+    color:white;
+  }
 }
 //   @include when-inside('.') {
 //     @include size(100%, auto);

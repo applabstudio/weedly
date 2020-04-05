@@ -1,6 +1,5 @@
 .news-letter {
 	@include size(44rem, auto);
-
 	@include media('<=md') {
 		@include size(100%, auto);
 		@include flexbox();
