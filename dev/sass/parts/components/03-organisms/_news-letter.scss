@@ -1,0 +1,35 @@
+.news-letter {
+	@include size(44rem, auto);
+	@include media('<=md') {
+		@include size(100%, auto);
+		@include flexbox();
+		@include flex-direction(column);
+		@include align-items(center);	
+	}
+
+	#mc_embed_signup {
+		@include media('<=md') {
+			justify-content: center;
+			padding: 2rem 0;
+		}
+	}
+
+	#mc-embedded-subscribe {
+		margin-left: 2rem;
+
+		@include media('<=lg') {
+			margin-left: unset;
+		}
+	}
+
+	h4 {
+		@include set-font($base-font-family, normal, normal, 2.4rem);
+		color: get-color(primary, 0);
+	}
+
+	p {
+		padding-top: unset;
+		@include set-font($base-font-family, normal, normal, $small-font-size);
+		color: #99A5BD;
+	}
+}

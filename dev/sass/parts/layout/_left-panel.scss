@@ -100,6 +100,7 @@
     }
 
     .btn {
+
       @include media('<=sm') {
         width: 170px;
         margin: 0 auto;

@@ -1,0 +1,77 @@
+.coming-soon {
+	@include relative();
+	@include flexbox();
+	@include flex-direction(column);
+	@include align-items(center);
+	@include justify-content(center);
+	height:100%;
+
+	@include media('<=lg') {
+		width: 90%;
+		margin: 0 auto;
+	}	
+
+	@include media('<=md') {
+		width: 60%;
+	}
+
+	@include media('<=sm') {
+		width: 93%;
+	}
+
+	&__wrapper {
+		@include flexbox();
+		@include flex-direction(column);	
+		@include size(100%, 50rem);
+		@include justify-content(space-around);
+
+		@include media('<=md') {
+			justify-content: unset;
+			height: unset;
+			@include align-items(center);
+		}
+
+		&__header {
+			@include media('<=md') {
+				@include flexbox();
+				@include flex-direction(column);
+				@include align-items(center);
+			}
+
+
+			h1 {
+				@include set-font($base-font-family, normal, 800, 4.2rem);
+			}
+
+			p {
+				@include set-font($base-font-family, normal, normal, 2.4rem);
+				color: #99A5BD;
+				padding: 2rem 0;
+
+				@include media('<=md') {
+					text-align: center;
+				}
+			}
+		}
+
+	}
+
+	&__footer {
+		width: 100%;
+		@include flexbox();
+		@include align-items(center);
+		@include set-font($base-font-family, normal, normal, $base-font-size);
+		
+		@include media('<=md') {
+			width: 100%;
+			@include justify-content(flex-start);
+			padding: 0 0 2.4rem 0;
+			margin: unset;
+			@include flex-direction(column);
+		}
+
+		@include media('<=sm') {
+			@include justify-content(center);
+		}
+	}
+}

@@ -25,8 +25,6 @@ $md: 2rem;
 $lg: 3rem;
 $xl: 4rem;
 
-
-
 // Line Height
 // fallback for old browser => $lh-base: (1 * 10) + px;
 $lh-base: 1rem;
@@ -78,11 +76,14 @@ $im-grid-include-max-width: true;
 // colors
 $text-color: black;
 
-$colors: (primary: (0: #28C660, //Primary
-    1: #3ccb6f, //hover
-    2: #768093, //Secondary
+$colors: (
+    primary: (
+      0: #28C660, //Primary
+      1: #3ccb6f, //hover
+      2: #768093, //Secondary
   ),
-  bg: (0: #F3F3F4,
+  bg: (
+    0: #F3F3F4,
     1: #28C660, // weedly green
     2: rgb(19, 167, 71),
     3: #DB3236, //Google
@@ -91,7 +92,13 @@ $colors: (primary: (0: #28C660, //Primary
     6: #de4649, //Google hover
     7: #4e69a2, //Facebook hover
   ),
-  modal: (0: #fffffff0));
+  modal: (
+    0: #fffffff0
+  ),
+  input: (
+    0: #F3F3F4
+  )
+);
 
 // Main Colors
 $weedly: #28C660 !default; // green

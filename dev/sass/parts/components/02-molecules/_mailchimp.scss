@@ -1,0 +1,41 @@
+#mc_embed_signup {
+	background: white; 
+	@include set-font(Helvetica, normal, normal, 1.4rem);
+	@include size(100%, auto);
+	@include flexbox();
+	padding-top:2rem;
+	
+	#mc_embed_signup_scroll {
+	   @include flexbox();
+ 
+	   @include media('<=md') {
+		  @include flex-direction(column);
+	   }
+	   
+	   .btn--primary {
+		@include size(14rem, 5rem);
+	   }
+
+	   input {
+			@include size(31.2rem, 5rem);
+			border-radius: 8px;
+			border: 1px solid get-color(input, 0);
+			padding-left: 2rem;
+			@include set-font($base-font-family, normal, normal, $small-font-size);
+		
+			@include media('<=md') {
+			margin: 1rem 0;
+		  }
+		  &:focus {
+			border: 1px solid get-color(bg, 1);
+		  }
+	   }
+ 
+	   #mc-embedded-subscribe {
+		  @include media('<=md') {
+			 width: 100%;
+		  }
+	  }
+	}
+ }
+ 

@@ -1,0 +1,27 @@
+.social {
+	@include size(44rem, auto);
+	padding-top: 8rem;
+
+	@include media('<=md') {
+		padding-top: 2rem;
+	}
+
+	ul {
+		padding-left: 0;
+
+		@include media('<=md') {
+			text-align: center;
+		}
+	}
+
+	li {
+		display: inline;
+		padding-right: 2.4rem;
+		opacity: 0.9;
+
+		&:hover {
+			transition: $tt;
+			opacity: 1;
+		}
+	}
+}
