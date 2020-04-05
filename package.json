@@ -21,13 +21,9 @@
     "url": "https://github.com/wwwebman/gulp-webpack-starter.git"
   },
   "scripts": {
-    "preinstall": "npx npm-force-resolutions",
     "start": "NODE_ENV=development gulp",
     "build": "NODE_ENV=production gulp",
     "deploy": "NODE_ENV=production gulp deploy"
-  },
-  "resolutions": {
-    "graceful-fs": "4.2.3"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
