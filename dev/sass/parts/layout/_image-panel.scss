@@ -1,0 +1,8 @@
+.image-panel {
+	background: url('../../../images/image-welcome.png') no-repeat;
+	@include size(480px, 100vh);
+	
+	@include media('<=md') {
+		display: none;
+	}
+}
