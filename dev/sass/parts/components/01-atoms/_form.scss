@@ -23,12 +23,17 @@
   }
 
   .privacy-policy {
-    @include flexbox();
-    @include align-items(baseline);
+    padding: 0 0 2rem;
+
+    input[type="checkbox"] {
+      display: inline-block;
+      margin-right: 5px;
+    }
 
     label {
       @include set-font($base-font-family, normal, normal, $small-font-size);
       margin: 0 0 2rem 0;
+      display: inline;
     }
 
   }

@@ -1,3 +1,54 @@
+.business-icons {
+  padding: 0 0 5rem;
+
+  @include media('<=md') {
+    padding: 1rem 0 3rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+
+      @include media('<=sm') {
+        padding: 0 12px;
+      }
+
+      @include media('<=xs') {
+        padding: 0 10px;
+      }
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      i {
+        color: #768093;
+        font-size: 2.6rem;
+
+        &:hover,
+        &:focus {
+          color: $weedly;
+        }
+
+        @include media('<=sm') {
+          font-size: 2.4rem;
+        }
+
+        @include media('<=xs') {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
 .business {
   @include relative();
   @include flexbox();

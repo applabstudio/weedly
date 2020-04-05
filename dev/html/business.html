@@ -11,8 +11,7 @@
   <!-- SEO -->
   <meta name="description" content="Weedly">
   <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/font-awesome.css">
   <!-- UIkit CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css" />
   <!-- UIkit JS -->
@@ -41,12 +40,13 @@
             <div class="left-panel__body uk-container">
               <div class="left-panel__header">
                 <div class="left-panel__header__wrapper">
-                  <a href="index.html"><img src="./images/logo.gif" alt="Weedly" title="Weedly"
+                  <a href="index.html"><img src="./images/logo-weedly.png" alt="Weedly" title="Weedly"
                       class="logo logo--small"></a>
                 </div>
                 <div class="left-panel__footer">
                   <div class="welcome">
-                    <div class="welcome__title">Un mercato sicuro dove trovare e acquistare<div id="tit-type"></div>
+                    <div class="welcome__title">Un <span>mercato</span> sicuro dove trovare e acquistare<div
+                        id="tit-type"></div>
                     </div>
                   </div>
                   <a href="how-does-it-work.html" class="btn btn--dark">Come funziona</a>
@@ -63,10 +63,34 @@
           <div class="business">
             <div class="business__wrapper">
               <div class="business__wrapper__intro">
+                <div class="business-icons">
+                  <ul>
+                    <li>
+                      <i uk-tooltip="title: Prodotti" class="fal fa-shopping-bag"></i>
+                    </li>
+                    <li>
+                      <i uk-tooltip="title: Clienti" class="fal fa-users"></i>
+                    </li>
+                    <li>
+                      <i uk-tooltip="title: Ordini" class="fal fa-clipboard-list"></i>
+                    </li>
+
+                    <li>
+                      <i uk-tooltip="title: Spedizioni" class="fal fa-truck"></i>
+                    </li>
+                    <li>
+                      <i uk-tooltip="title: Magazzino" class="fal fa-boxes"></i>
+                    </li>
+
+                    <li>
+                      <i uk-tooltip="title: Statistiche" class="fal fa-chart-area"></i>
+                    </li>
+                  </ul>
+                </div>
                 <h1>Gestisci il tuo negozio online.</h1>
                 <h2>Al resto pensiamo noi.</h2>
                 <p>Registra il tuo negozio su Weedly e fai volare il tuo business: raggiungi nuovi clienti, aumenta
-                  le vendite e aiuta il mercato italiano</p>
+                  le vendite e aiuta il mercato italiano a crescere</p>
                 <div class="cta">
                   <a href="index.html" class="btn btn--primary">Accedi</a>
                   <a href="business-signup.html" class="btn btn--grey">Registrati</a>

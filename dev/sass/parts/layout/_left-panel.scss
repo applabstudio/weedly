@@ -1,6 +1,6 @@
 .left-panel {
   background: get-color(bg, 1);
-  @include size(480px, 100vh);
+  @include size(30%, 100vh);
 
   @include media('<=md') {
     @include size(100%, 50vh);
@@ -35,21 +35,21 @@
 
     @include media('<=md') {
       @include flex-flow(row);
-      @include align-items(center);
+      @include align-items(flex-start);
     }
 
     @include media('<=sm') {
       @include flex-flow(column);
+      @include align-items(center);
       padding: 0 15px;
     }
 
     &__wrapper {
       @include flexbox();
       @include justify-content(flex-start);
-      padding-bottom: 13.5rem;
+      padding-bottom: 10rem;
 
-      @include media('<=lg') {
-
+      @include media('<=sm') {
         padding-bottom: 2rem;
       }
     }
@@ -69,14 +69,22 @@
         color: white;
         @include set-font($base-font-family, normal, normal, 2.4rem);
 
+        @include media('<=lg') {
+          font-size: 2rem;
+        }
+
         @include media('<=sm') {
           font-size: 2rem;
+        }
+
+        span {
+          font-weight: 700;
         }
       }
 
       #tit-type {
-        display: inline-block;
-        padding-left: 8px;
+        display: block;
+        padding-left: 0;
         font-weight: 700;
 
         @include media('<=md') {

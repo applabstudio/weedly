@@ -1,21 +1,19 @@
 // include-media breakpoints
-$breakpoints: (
-  xs: 320px,
+$breakpoints: (xs: 320px,
   sm: 768px,
   md: 992px,
   lg: 1200px,
   xl: 1440px,
 ) !default;
 
-$media-expressions: (
-  'screen': 'screen',
+$media-expressions: ('screen': 'screen',
   'print': 'print',
   'handheld': 'handheld',
   'landscape': '(orientation: landscape)',
   'portrait': '(orientation: portrait)',
   'retina2x': '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)',
   'retina3x': '(-webkit-min-device-pixel-ratio: 3), (min-resolution: 350dpi)'
-) !default; 
+) !default;
 
 // Spacing unit
 $su: 4px !default;
@@ -30,7 +28,7 @@ $xl: 4rem;
 
 
 // Line Height
-// fallback for old browser => $lh-base: (1 * 10) + px; 
+// fallback for old browser => $lh-base: (1 * 10) + px;
 $lh-base: 1rem;
 $lh-xs: 1.8rem;
 $lh-s: 2rem;
@@ -61,8 +59,7 @@ $ls: 1px;
 $ls-md: 6px;
 
 // container's settings
-$container-width: (
-  sm: 750px,
+$container-width: (sm: 750px,
   md: 970px,
   lg: 1170px,
   // xl: 1560px,
@@ -81,14 +78,11 @@ $im-grid-include-max-width: true;
 // colors
 $text-color: black;
 
-$colors: (
-  primary: (
-    0: #28C660, //Primary
+$colors: (primary: (0: #28C660, //Primary
     1: #3ccb6f, //hover
     2: #768093, //Secondary
   ),
-  bg: (
-    0: #F3F3F4,
+  bg: (0: #F3F3F4,
     1: #28C660, // weedly green
     2: rgb(19, 167, 71),
     3: #DB3236, //Google
@@ -97,58 +91,65 @@ $colors: (
     6: #de4649, //Google hover
     7: #4e69a2, //Facebook hover
   ),
-  modal: (
-    0: #fffffff0
-  )
-);
+  modal: (0: #fffffff0));
 
 // Main Colors
-$color-info:      #2083FE !default; // blue
-$color-success:   #2FCA74 !default; // green
-$color-warning:   #f5b848 !default; // yellow
-$color-danger:    #ED4D4D !default; // red
-$color-fancy: 	  #6F35F0 !default; // purple
-$color-primary:   #252529 !default; // black
+$weedly: #28C660 !default; // green
+$color-info: #2083FE !default; // blue
+$color-success: #2FCA74 !default; // green
+$color-warning: #f5b848 !default; // yellow
+$color-danger: #ED4D4D !default; // red
+$color-fancy: #6F35F0 !default; // purple
+$color-primary: #252529 !default; // black
 
 // Extra Colors
 $color-pink: #F44C67 !default; // pink
 
 // Light Colors
-$color-info-light:      #E0EBFF !default; // blue
-$color-success-light:   #DAF4E6 !default; // green
-$color-warning-light:   #FFECDA !default; // yellow
-$color-danger-light:    #FFE2E2 !default; // red
-$color-primary-light:   #E9ECF2 !default; // black
-$color-fancy-light:     #E9E0FF !default; // purple
+$color-info-light: #E0EBFF !default; // blue
+$color-success-light: #DAF4E6 !default; // green
+$color-warning-light: #FFECDA !default; // yellow
+$color-danger-light: #FFE2E2 !default; // red
+$color-primary-light: #E9ECF2 !default; // black
+$color-fancy-light: #E9E0FF !default; // purple
 
 // Basic Colors
 $color-sky-light: #F4F6F9 !default;
-$color-sky:       #ECEDF2 !default;
-$color-sky-dark:  #E1E2E8 !default;
+$color-sky: #ECEDF2 !default;
+$color-sky-dark: #E1E2E8 !default;
 
 $color-ink-light: #99A5BD !default;
-$color-ink:       #768093 !default;
-$color-ink-dark:  #252529 !default;
+$color-ink: #768093 !default;
+$color-ink-dark: #252529 !default;
 
 $color-white: #fff !default;
 
 // Main Gradients
-$gradient-info:      #1D7BF0, #2083FE !default;
-$gradient-success:   #28C76F, #2CCF75 !default;
-$gradient-warning:   #F5A155, #F5B855 !default;
-$gradient-danger:    #EE4343, #EC5F5F !default;
-$gradient-primary:   #252529, #444449 !default;
-$gradient-secondary: #768093, #969FB0 !default;
-$gradient-weedly:    #28C660, #20BE58 !default;
+$gradient-info: #1D7BF0,
+#2083FE !default;
+$gradient-success: #28C76F,
+#2CCF75 !default;
+$gradient-warning: #F5A155,
+#F5B855 !default;
+$gradient-danger: #EE4343,
+#EC5F5F !default;
+$gradient-primary: #252529,
+#444449 !default;
+$gradient-secondary: #768093,
+#969FB0 !default;
+$gradient-weedly: #28C660,
+#20BE58 !default;
 
 // Extra Gradients
-$gradient-fancy: #4F5EF5, #6A77FF; // purple
+$gradient-fancy: #4F5EF5,
+#6A77FF; // purple
 
 $body-background-color: $color-sky-light !default;
 $base-background-color: $color-white !default;
 
 // fonts
-$base-font-family: 'Karla', sans-serif;
+$base-font-family: 'Karla',
+sans-serif;
 
 $base-font-size: 1.6rem !default;
 $base-line-height: 2.4rem !default;
