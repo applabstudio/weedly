@@ -1,8 +1,10 @@
 .image-panel {
-	background: url('../../../images/image-welcome.png') no-repeat;
-	@include size(480px, 100vh);
-	
-	@include media('<=md') {
-		display: none;
-	}
+  background: url('../../../images/weedly-cover.jpg') no-repeat;
+  @include size(480px, 100vh);
+  background-size: cover;
+  background-position: center right;
+
+  @include media('<=md') {
+    display: none;
+  }
 }

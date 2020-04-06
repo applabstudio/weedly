@@ -1,27 +1,36 @@
 .social {
-	@include size(44rem, auto);
-	padding-top: 8rem;
+  @include size(44rem, auto);
+  padding-top: 7rem;
+  padding-bottom: 2rem;
 
-	@include media('<=md') {
-		padding-top: 2rem;
-	}
+  @include media('<=md') {
+    padding-top: 2rem;
+  }
 
-	ul {
-		padding-left: 0;
+  ul {
+    padding-left: 0;
 
-		@include media('<=md') {
-			text-align: center;
-		}
-	}
+    @include media('<=md') {
+      text-align: center;
+    }
+  }
 
-	li {
-		display: inline;
-		padding-right: 2.4rem;
-		opacity: 0.9;
+  li {
+    display: inline;
+    padding-right: 2.4rem;
 
-		&:hover {
-			transition: $tt;
-			opacity: 1;
-		}
-	}
+    &:last-child {
+      padding-right: 0;
+    }
+
+    a {
+      transition: $tt;
+
+      &:hover,
+      &:focus {
+        color: $weedly;
+        transition: $tt;
+      }
+    }
+  }
 }

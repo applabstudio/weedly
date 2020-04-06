@@ -1,35 +1,60 @@
 .news-letter {
-	@include size(44rem, auto);
-	@include media('<=md') {
-		@include size(100%, auto);
-		@include flexbox();
-		@include flex-direction(column);
-		@include align-items(center);	
-	}
+  @include size(44rem, auto);
 
-	#mc_embed_signup {
-		@include media('<=md') {
-			justify-content: center;
-			padding: 2rem 0;
-		}
-	}
+  @include media('<=md') {
+    @include size(100%, auto);
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(center);
+  }
 
-	#mc-embedded-subscribe {
-		margin-left: 2rem;
+  #mc_embed_signup {
+    @include media('<=md') {
+      justify-content: center;
+      padding: 2rem 0;
+    }
+  }
 
-		@include media('<=lg') {
-			margin-left: unset;
-		}
-	}
+  #mc-embedded-subscribe {
+    margin-left: 2rem;
 
-	h4 {
-		@include set-font($base-font-family, normal, normal, 2.4rem);
-		color: get-color(primary, 0);
-	}
+    @include media('<=lg') {
+      margin-left: unset;
+    }
+  }
 
-	p {
-		padding-top: unset;
-		@include set-font($base-font-family, normal, normal, $small-font-size);
-		color: #99A5BD;
-	}
+  h4 {
+    @include set-font($base-font-family, normal, normal, 2.4rem);
+    color: get-color(primary, 0);
+  }
+
+  p {
+    padding-top: unset;
+    @include set-font($base-font-family, normal, normal, $small-font-size);
+    color: #99A5BD;
+
+    @include media('<=sm') {
+      text-align: center;
+      padding: 0 2rem;
+    }
+  }
+
+  input[type="email"] {
+    background: #F3F3F4;
+    height: 4rem;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-family: "Karla", sans-serif, "Arial", "Helvetica", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    display: block;
+    transition: all ease-in-out .3s;
+
+    &:focus {
+      border: 1px solid #28C660;
+      outline: none;
+      background-color: #fff;
+    }
+  }
 }
