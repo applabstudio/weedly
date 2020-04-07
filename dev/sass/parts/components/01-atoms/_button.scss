@@ -19,12 +19,13 @@ $ico-dim: rem(32px);
   outline: none;
   cursor: pointer;
   transition: all $tt;
-  border:none;
+  border: none;
   border-radius: $b-rad;
+
   @include media('<=sm') {
     width: 100%
   }
-  
+
   svg {
     @include size($ico-dim, $ico-dim);
     transition: all $tt;
@@ -32,15 +33,18 @@ $ico-dim: rem(32px);
 
   &--primary {
     background: get-color(primary, 0);
-    color:white;
+    color: white;
+
     &:active {
       background: get-color(primary, 0);
       color: $color-white;
     }
+
     &:hover {
       background: get-color(primary, 1);
       opacity: .9;
     }
+
     &:active {
       transform: scale(.92);
     }
@@ -49,11 +53,13 @@ $ico-dim: rem(32px);
   &--dark {
     @include button-style(white, white, black, #252529, white, black);
     @include size(15rem, 4rem);
+
     &:active {
-      background: black ;
+      background: black;
       color: white;
       transform: scale(.92);
-    }	
+    }
+
     @include media('<=sm') {
       width: 100%;
     }
@@ -64,12 +70,13 @@ $ico-dim: rem(32px);
     width: 324px;
     border-radius: $b-rad;
     border: 1px solid get-color(bg, 3);
+
     &:active {
       background: get-color(bg, 3);
       color: $color-white;
       transform: scale(.92);
     }
-    
+
     @include media('<=md') {
       width: 80%;
     }
@@ -88,11 +95,12 @@ $ico-dim: rem(32px);
     border: 1px solid get-color(bg, 4);
     cursor: pointer;
     transition: all $tt;
+
     &:active {
       background: get-color(bg, 4);
       color: $color-white;
       transform: scale(.92);
-    }	
+    }
 
     @include media('<=md') {
       width: 15%;
@@ -102,9 +110,10 @@ $ico-dim: rem(32px);
   &--grey {
     @include button-style(white, white, get-color(bg, 5), #969FB0, get-color(bg, 5), get-color(bg, 5));
     border-radius: $b-rad;
+
     &:active {
       background: get-color(bg, 5);
-      color:$color-white;
+      color: $color-white;
       transform: scale(.92);
     }
   }
@@ -114,6 +123,7 @@ $ico-dim: rem(32px);
 
 .btn-large {
   width: 21.4rem;
+
   @include media('<=sm') {
     width: 100%;
   }
@@ -123,9 +133,10 @@ a.btn {
   text-decoration: none;
 
   &:hover {
-    color:white;
+    color: white;
   }
 }
+
 //   @include when-inside('.') {
 //     @include size(100%, auto);
 //   }

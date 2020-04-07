@@ -40,7 +40,7 @@
 
 
       h1 {
-        @include set-font($base-font-family, normal, 800, 4.2rem);
+        @include set-font($base-font-family, 700, 800, 4.2rem);
 
         @include media('<=sm') {
           padding-top: 4rem;
